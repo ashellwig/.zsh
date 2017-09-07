@@ -1,0 +1,3 @@
+[submodule "functions/powerlevel9k"]
+	path = functions/powerlevel9k
+	url = https://github.com/bhilburn/powerlevel9k.git

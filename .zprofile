@@ -9,7 +9,7 @@
 # ZDOT
 export ZDOTDIR=/home/ahellwig/.zsh
 # Browser
-Export BROWSER='chromium'
+export BROWSER='chromium'
 # Editor
 export EDITOR='vim'
 export VISUAL='vim'
@@ -26,7 +26,7 @@ if (( $#commands[(i)lesspipe(|.sh)] )); then
 fi
 
 # --- Path ---
-typeset -gU cdpath fpath mailpath path
+typeset -gU cdpath path
 # Directories
 cdpath=(
   $cdpath
@@ -45,3 +45,4 @@ path=(
 
   export PATH=${R1VM241}:${ANA1}:${RUST1}:${LOCALBINDIR}:${CONDAPATHPROF}:$PATH:${R1VMLAST}
 )
+unset cdpath path
