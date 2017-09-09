@@ -6,8 +6,11 @@
 ####################################################
 
 # --- Variables ---
-# ZDOT
+# Terminal
 export ZDOTDIR=/home/ahellwig/.zsh
+if [[ "$(echo ${TERM})" != "xterm-termite" ]]; then
+  export TERM='xterm-termite'
+fi
 # Browser
 export BROWSER='chromium'
 # Editor
@@ -46,3 +49,4 @@ path=(
   export PATH=${R1VM241}:${ANA1}:${RUST1}:${LOCALBINDIR}:${CONDAPATHPROF}:$PATH:${R1VMLAST}
 )
 unset cdpath path
+#vim: ft=zsh ts=2 sw=2

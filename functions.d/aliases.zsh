@@ -6,7 +6,7 @@
 
 # --- Colors ---
 # ls
-alias ls="ls -lFa --color=always"
+alias ls="ls -lFah --color=always"
 # dmesg
 alias kernellogs="dmesg --human --color=always | most"
 

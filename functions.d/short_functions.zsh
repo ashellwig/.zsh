@@ -39,3 +39,13 @@ function makenewdir() {
     return 0
   fi
 }
+
+# Update's the Manually Installed Parity Client, Manually
+function updateparity {
+  cd $HOME/parity
+  git pull
+  cargo build
+  cargo build --release
+  cargo install
+  return 0
+}
