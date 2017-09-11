@@ -17,12 +17,37 @@ export ZDOTDIR=~/.zsh
 git clone https://github.com/ashellwig/.zsh.git ${ZDOTDIR}
 ```
 
-## Directories
+## Features
+* `./functions`
+  * [history-substring-search](https://github.com/zsh-users/zsh-history-substring-search)
+    * Type in any part of any command from history and then press chosen keys,
+    such as the UP and DOWN arrows, to cycle through matches in history
+  * [powerlevel9k](https://github.com/bhilburn/powerlevel9k)
+    * A prompt theme for .Zsh
+      * If this is not found in the `${ZDOTDIR}`, then `prompt -s fade blue` is used.
+  * [zsh-completions](https://github.com/zsh-users/zsh-completions)
+    * This projects aims at gathering/developing new completion scripts that are
+    not available in Zsh yet. The scripts may be contributed to the Zsh
+    project when stable enough.
+  * [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+    * This package provides syntax highlighing for the shell zsh. It enables
+    highlighing of commands whilst they are typed at a zsh prompt into an
+    interactive terminal.
+* `./functions.d`
+  * [aliases.zsh](https://github.com/ashellwig/.zsh/blob/master/functions.d/aliases.zsh)
+    * Personal command aliases
+  * [prompt.zsh](https://github.com/ashellwig/.zsh/blob/master/functions.d/prompt.zsh)
+    * Sets the prompt to `../functions/powerlevel9k` if available, otherwise sets
+    to `promt -s fade blue`.
+  * [short_functions.zsh](https://github.com/ashellwig/.zsh/blob/master/functions.d/short_functions.zsh)
+    * Used for smaller functions and each will be broken into their own file
+    at a later time.
+
 <!DOCTYPE html>
 <html>
 <head>
  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
- <meta name="Author" content="Made by 'tree'">
+ <meta name="Ashton Hellwig" content="Made by 'tree'">
  <meta name="GENERATOR" content="$Version: $ tree v1.7.0 (c) 1996 - 2014 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro $">
   <!--
   BODY { font-family : ariel, monospace, sans-serif; }
