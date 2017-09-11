@@ -7,3 +7,6 @@
 [submodule "functions/zsh-syntax-highlighting"]
 	path = functions/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "functions/history-substring-search"]
+	path = functions/history-substring-search
+	url = https://github.com/zsh-users/zsh-history-substring-search
