@@ -1,3 +1,7 @@
 .histfile
 *.zcompcache/*
 .zcompdump
+*.*.swp
+*.swp
+*.bak
+*.*.bak
