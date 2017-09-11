@@ -1,3 +1,9 @@
 [submodule "functions/powerlevel9k"]
 	path = functions/powerlevel9k
 	url = https://github.com/bhilburn/powerlevel9k.git
+[submodule "functions/zsh-completions"]
+	path = functions/zsh-completions
+	url = https://github.com/zsh-users/zsh-completions.git
+[submodule "functions/zsh-syntax-highlighting"]
+	path = functions/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
