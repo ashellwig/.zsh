@@ -13,10 +13,11 @@ autoload compinit && compinit
 # Drop-in Functions and Scripts
 if [[ -d ${ZDOTDIR}/functions.d ]]; then
   source ${ZDOTDIR}/functions.d/short_functions.zsh
-  source ${ZDOTDIR}/functions.d/history-substring-search.zsh
   source ${ZDOTDIR}/functions.d/prompt.zsh
   source ${ZDOTDIR}/functions.d/aliases.zsh
 fi
+# History-Substring-Search
+source ${ZDOTDIR}/functions/history-substring-search/zsh-history-substring-search.zsh
 # Syntax Highlighting
 if [[ -d ${ZDOTDIR}/functions/zsh-syntax-highlighting ]]; then
   source ${ZDOTDIR}/functions/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
