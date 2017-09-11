@@ -42,8 +42,6 @@ git clone https://github.com/ashellwig/.zsh.git ${ZDOTDIR}
   .SOCK  { color: fuchsia;background-color: transparent;}
   .EXEC  { color: green;  background-color: transparent;}
   -->
- </style>
-</head>
 <body>
 	<b class="NORM">.zsh</b><br>
 	├── <b class="DIR">functions</b><br>
