@@ -16,8 +16,6 @@ if [[ -d ${ZDOTDIR}/functions.d ]]; then
   source ${ZDOTDIR}/functions.d/prompt.zsh
   source ${ZDOTDIR}/functions.d/aliases.zsh
 fi
-# History-Substring-Search
-source ${ZDOTDIR}/functions/history-substring-search/zsh-history-substring-search.zsh
 # Syntax Highlighting
 if [[ -d ${ZDOTDIR}/functions/zsh-syntax-highlighting ]]; then
   source ${ZDOTDIR}/functions/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -32,7 +30,8 @@ if [[ -d ${ZDOTDIR}/functions/zsh-syntax-highlighting ]]; then
     'mkdir' 'fg=white,bold,bg=green'
 )
 fi
-
+# History-Substring-Search
+source ${ZDOTDIR}/functions/history-substring-search/zsh-history-substring-search.zsh
 # --- Options ---
 # History
 HISTFILE=${ZDOTDIR}/.histfile
