@@ -60,7 +60,6 @@ function updateparity {
   git pull
   cargo build
   cargo build --release
-  cargo install
   return 0
 }
 
