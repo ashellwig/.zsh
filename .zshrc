@@ -1,4 +1,3 @@
-#vim: ft=zsh sw=2 ts=2 et
 ####################################################
 # .zshrc                                          ##
 # @ashellwig                                      ##
@@ -6,15 +5,16 @@
 ####################################################
 
 # --- Functions ---
-fpath=(${ZDOTDIR}/functions/zsh-completions/src $fpath)
+fpath=($fpath ${ZDOTDIR}/functions/zsh-completions/src)
+for func in $^fpath/*(N-.x:t); autoload $func
 # Completion
 autoload ${ZDOTDIR}/functions/zsh-completions/src
 autoload compinit && compinit
 # Drop-in Functions and Scripts
 if [[ -d ${ZDOTDIR}/functions.d ]]; then
-  source ${ZDOTDIR}/functions.d/short_functions.zsh
-  source ${ZDOTDIR}/functions.d/prompt.zsh
-  source ${ZDOTDIR}/functions.d/aliases.zsh
+  for file in ${ZDOTDIR}/functions.d/*.zsh; do
+   . "$file"
+  done
 fi
 # Syntax Highlighting
 if [[ -d ${ZDOTDIR}/functions/zsh-syntax-highlighting ]]; then
@@ -44,10 +44,14 @@ unsetopt autocd notify
 
 # --- Keybindings ---
 # History
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
-bindkey -M vicmd 'k' history-substring-search-up
-bindkey -M vicmd 'j' history-substring-search-down
+if [[ -e ${ZDOTDIR}/functions/history-substring-search/zsh-history-substring-search.zsh ]]; then
+  bindkey '^[[A' history-substring-search-up
+  bindkey '^[[B' history-substring-search-down
+  bindkey -M vicmd 'k' history-substring-search-up
+  bindkey -M vicmd 'j' history-substring-search-down
+fi
 # Navigation
 bindkey '^[[H' beginning-of-line
 bindkey '^[[F' end-of-line
+bindkey '^[[~' delete-char-or-list
+# vim: set et ts=2 sw=2:
