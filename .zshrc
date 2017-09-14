@@ -16,6 +16,12 @@ if [[ -d ${ZDOTDIR}/functions.d ]]; then
    . "$file"
   done
 fi
+# Options that apply to/with functions
+if [[ -d ${ZDOTDIR}/options ]]; then
+  for file in ${ZDOTDIR}/options/*.zsh; do
+   . "$file"
+  done
+fi
 # Syntax Highlighting
 if [[ -d ${ZDOTDIR}/functions/zsh-syntax-highlighting ]]; then
   source ${ZDOTDIR}/functions/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
