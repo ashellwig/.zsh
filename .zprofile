@@ -1,21 +1,25 @@
+# vim: set et ft=zsh ts=2 sw=2
 ####################################################
 # .zlogin                                         ##
 # @ashellwig                                      ##
 # Purpose: Set environment/options for            ##
 #    login shells                                 ##
 ####################################################
+emulate zsh
 
 # --- Variables ---
 # Terminal
-export ZDOTDIR=/home/ahellwig/.zsh
-if [[ "$(echo ${TERM})" != "xterm-termite" ]]; then
+if [[ -d ${HOME}/.zsh ]]; then
+  export ZDOTDIR=/home/ahellwig/.zsh
+fi
+if [[ -n "$(command -v termite)" ]]; then
   export TERM='xterm-termite'
 fi
 # Browser
 export BROWSER='chromium'
 # Editor
-export EDITOR='vim'
-export VISUAL='vim'
+export EDITOR=/usr/bin/vim
+export VISUAL=/usr/bin/code
 export VI='vim'
 export PAGER='less'
 # Language
@@ -37,16 +41,14 @@ cdpath=(
 # Programs
 path=(
   /usr/local/{bin,sbin}
-  ## Varibles
-  R1VM241=~/.rvm/gems/ruby-2.41/bin
-  R1VLAST=~/.rvmbin
-  ANA1=~/anaconda3/bin
-  RUST1=~/.cargo/bin:~/parity/target/release
-  PARITYPATHDIR=~/parity/target/release
-  LOCALBINDIR=~/.local/bin
-  CONDAPATHPROF=~/anaconda3/bin
-
-  export PATH=${R1VM241}:${ANA1}:${RUST1}:${LOCALBINDIR}:${CONDAPATHPROF}:$PATH:${R1VMLAST}
+  ~/.rvm/gems/ruby-2.41/bin
+  ~/.rvmbin
+  ~/anaconda3/bin
+  ~/.cargo/bin
+  ~/parity/target/release
+  ~/parity/target/release
+  ~/.local/bin
+  ~/anaconda3/bin
 )
+export PATH="${path}"
 unset cdpath path
-#vim: ft=zsh ts=2 sw=2

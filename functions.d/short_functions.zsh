@@ -17,10 +17,12 @@ function full_backup() {
 }
 
 # Create a New Executable File
-function new_exec_file() {
-  print "This will create a new executable file."
-  print "Please enter the filename, including extension"
-  print "If the file exists, the command exits."
+fun~~ction new_exec_file() {
+  cat <<EOF
+   This will create a new executable file.
+  Please enter the filename, including extension
+  If the file exists, the command exits.
+EOF
   read fileinputname
   if [[ ! -e ${fileinputname} ]]; then
     touch ${fileinputname}
@@ -30,34 +32,6 @@ function new_exec_file() {
     print "File exists. Exiting."
     return 0
   fi
-}
-
-# Creates a new directory and `cd`s into it
-function makenewdir() {
-  print "Please name the directory to be created."
-  print "If it already exists, the command will exit."
-  read newdirmade
-  if [[ ! "$#" -eq 0 ]]; then
-    local newdirmade="$1"
-  elif [[ "$#" -eq 0 ]]; then
-    return
-  fi
-  if [[ ! -d ${newdirmade} ]]; then
-    mkdir -p ${newdirmade}
-    cd ${newdirmade}
-  elif [[ -d ${newdirmade} ]]; then
-    print "Directory already exists."
-    return 0
-  fi
-}
-
-# Update's the Manually Installed Parity Client, Manually
-function updateparity {
-  cd $HOME/parity
-  git pull
-  cargo build
-  cargo build --release
-  return 0
 }
 
 # vim: set et ts=2 sw=2:

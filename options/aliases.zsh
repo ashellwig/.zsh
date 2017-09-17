@@ -9,6 +9,8 @@
 alias ls="ls -lFah --color=always"
 # dmesg
 alias kernellogs="dmesg --human --color=always | most"
+# Testing TermCap
+alias textef="echo -e \"[4;31mUnderline[0m [3;32mItalic[0m [1;33mBold[0m [0;35mPurple[0m\""
 
 # --- Movement ---
 # i3
@@ -21,4 +23,3 @@ alias szs="source ~/.zsh/.zshrc"
 # Arch
 alias sc="systemctl"
 alias jc="journalctl | most"
-alias textef="echo -e \"[4;31mUnderline[0m [3;32mItalic[0m [1;33mBold[0m [0;35mPurple[0m\""
