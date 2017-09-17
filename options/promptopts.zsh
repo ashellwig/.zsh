@@ -3,8 +3,6 @@
 # @ashellwig                                      ##
 # Purpose: Set options interactive shell prompt   ##
 ####################################################
-alias %='$(export)'
-
 # Load the Powerlevel 9k Theme
 if [[ -d ${ZDOTDIR}/functions/powerlevel9k ]]; then
   # Prompt Elements
@@ -19,6 +17,5 @@ elif [[ ! -d ${ZDOTDIR}/functions/powerlevel9k ]]; then
   autoload -Uz promptinit && promptinit
   prompt fade blue
 fi
-unalias %
 
 # vim: set et ts=2 sw=2:
