@@ -16,48 +16,19 @@ if [[ -d ${ZDOTDIR}/functions.d ]]; then
    . "$file"
   done
 fi
-# Options that apply to/with functions
+
+# --- Options / Settings ---
+# Syntax Highlighting
+. ${ZDOTDIR}/settings/syntaxhighlightsettings.zsh
+# History
+. ${ZDOTDIR}/settings/historysettings.zsh
+# Option Scripts
 if [[ -d ${ZDOTDIR}/options ]]; then
   for file in ${ZDOTDIR}/options/*.zsh; do
    . "$file"
   done
 fi
-# Syntax Highlighting
-if [[ -d ${ZDOTDIR}/functions/zsh-syntax-highlighting ]]; then
-  source ${ZDOTDIR}/functions/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-  ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern line cursor root)
-  ZSH_HIGHLIGHT_PATTERNS+=(
-    'rm -rf *' 'fg=white,bold,bg=red' \
-    'killall *' 'fg=white,bold,bg=red' \
-    'pkill*-HUP *' 'fg=black,bold,bg=yellow' \
-    'pacman*-S *' 'fg=white,bold,bg=green' \
-    'touch *' 'fg=white,bold,bg=green' \
-    'makenewdir*' 'fg=white,bold,bg=green' \
-    'mkdir' 'fg=white,bold,bg=green'
-)
-fi
-# History-Substring-Search
-source ${ZDOTDIR}/functions/history-substring-search/zsh-history-substring-search.zsh
-# --- Options ---
-# History
-HISTFILE=${ZDOTDIR}/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
-setopt appendhistory
-# Zsh
-setopt beep nomatch
-unsetopt autocd notify
+# Keybindings
+. ${ZDOTDIR}/settings/keybindings.zsh
 
-# --- Keybindings ---
-# History
-if [[ -e ${ZDOTDIR}/functions/history-substring-search/zsh-history-substring-search.zsh ]]; then
-  bindkey '^[[A' history-substring-search-up
-  bindkey '^[[B' history-substring-search-down
-  bindkey -M vicmd 'k' history-substring-search-up
-  bindkey -M vicmd 'j' history-substring-search-down
-fi
-# Navigation
-bindkey '^[[H' beginning-of-line
-bindkey '^[[F' end-of-line
-bindkey '^[[~' delete-char-or-list
 # vim: set et ts=2 sw=2:

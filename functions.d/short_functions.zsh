@@ -17,7 +17,7 @@ function full_backup() {
 }
 
 # Create a New Executable File
-fun~~ction new_exec_file() {
+function new_exec_file() {
   cat <<EOF
    This will create a new executable file.
   Please enter the filename, including extension
