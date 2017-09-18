@@ -1,21 +1,11 @@
 # newexecfile.zsh
 # Purpose: Create a new exec file in cd or -d <d>
 
-function newexecfile() {
-  while [[ $# -gt 1 ]]; do
-    key="$1"
-
-    case $key in
-      -n|--name)
-        local filenamein="$2"
-        shift
-        ;;
-      -d|--directory)
-        local directoryloc="$2"
-        shift
-        ;;
-      -h|--help)
-        local helpmsg="$(cat <<END
+newexecfile() {
+  local OPTIND=1
+  local output_fname=""
+  local output_dirname=""
+  local helpmessage="$(cat <<END
 Option                    Purpose
 -------------------------------------------------
 -n     --name             filename to save as
@@ -23,11 +13,51 @@ Option                    Purpose
 -h     --help             show this help and exit
 END
 )"
-        shift
+
+  while getopts "h,f:,d:" opt; do
+    case "$opt" in
+      h|\?)
+        echo "${helpmessage}"
+        shift 2
+        ;;
+      f)
+        local output_fname=$OPTARG
+        shift 2
+        ;;
+      d)
+        local output_dirname=$OPTARG
+        ;;
+      *)
         ;;
     esac
-  shift
   done
+
+  shift $((OPTIND-1))
+  [[ "$1" = "--" ]] && shift
+
+  if [[ -n "$output_fname" ]]; then
+    if [[ -n "$output_dirname" ]]; then
+      if [[ -d $output_dirname ]]; then
+        print -f "\033[1;31mCannot create dir.\033[0m"
+      elif [[ ! -d $output_dirname ]]; then
+        mkdir -p "${output_dirname}" &&
+        touch "${output_dirname}/${output_fname}" ;
+        chmod +x "${output_dirname}/${output_fname}" ;
+        printf "\033[1;32mSuccess!\033[0m (new dir made)"
+        return 0
+      fi
+    else
+      if [[ ! -e "${output_fname}" ]]; then
+        touch $output_fname
+        chmod +x $output_fname
+        printf "\033[1;32mSuccess!\033[0m (no new dir)"
+        return 0
+      elif [[ -e "$output_fname" ]]; then
+        printf "\033[1;31mFile exists!\033[0m"
+        return 1
+      fi
+    fi
+  fi
 }
 
 # vim: set et ft=zsh ts=2 sw=2:

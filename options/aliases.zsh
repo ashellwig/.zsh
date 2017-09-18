@@ -7,6 +7,7 @@
 # --- Colors ---
 # ls
 alias ls="ls -lFah --color=always"
+alias newestdir="ls -ld *(/om[1])"
 # dmesg
 alias kernellogs="dmesg --human --color=always | most"
 # Testing TermCap

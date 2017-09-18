@@ -8,8 +8,7 @@
 fpath=($fpath ${ZDOTDIR}/functions/zsh-completions/src)
 for func in $^fpath/*(N-.x:t); autoload $func
 # Completion
-autoload ${ZDOTDIR}/functions/zsh-completions/src
-autoload compinit && compinit
+. ${ZDOTDIR}/settings/completionsettings.zsh
 # Drop-in Functions and Scripts
 if [[ -d ${ZDOTDIR}/functions.d ]]; then
   for file in ${ZDOTDIR}/functions.d/*.zsh; do
