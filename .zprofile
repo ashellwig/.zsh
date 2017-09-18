@@ -9,8 +9,10 @@ emulate zsh
 
 # --- Variables ---
 # Terminal
-if [[ -d ${HOME}/.zsh ]]; then
-  export ZDOTDIR=/home/ahellwig/.zsh
+if [[ ! -v ZDOTDIR ]]; then
+  if [[ -d ${HOME}/.zsh ]]; then
+    export ZDOTDIR=/home/ahellwig/.zsh
+  fi
 fi
 if [[ -n "$(command -v termite)" ]]; then
   export TERM='xterm-termite'

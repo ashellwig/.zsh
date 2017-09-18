@@ -6,11 +6,15 @@ newexecfile() {
   local output_fname=""
   local output_dirname=""
   local helpmessage="$(cat <<END
-Option                    Purpose
--------------------------------------------------
--n     --name             filename to save as
--d     --directory        Directory to save to
--h     --help             show this help and exit
+\033[1mPurpose:  \033[0mThis function creates a new executable file.
+\033[1mMaintained by:  \033[0;32mAshton Hellwig \033[0;4m<hellwigasthon@gmail.com>
+\033[0;1mUsage: \033[0m newexecfile -f <filename> [-d <directory>] [-h]
+\033[1m
+Option                         Purpose
+------------------------------------------------------\033[0m
+-n         --name             filename to save as
+-d         --directory        Directory to save to
+-h         --help             show this help and exit
 END
 )"
 
@@ -18,7 +22,6 @@ END
     case "$opt" in
       h|\?)
         echo "${helpmessage}"
-        shift 2
         ;;
       f)
         local output_fname=$OPTARG
@@ -26,6 +29,7 @@ END
         ;;
       d)
         local output_dirname=$OPTARG
+        shift
         ;;
       *)
         ;;
