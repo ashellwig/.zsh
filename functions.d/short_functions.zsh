@@ -16,22 +16,4 @@ function full_backup() {
   print -f "[1;32m\nBackup Complete![0m"
 }
 
-# Create a New Executable File
-function new_exec_file() {
-  cat <<EOF
-   This will create a new executable file.
-  Please enter the filename, including extension
-  If the file exists, the command exits.
-EOF
-  read fileinputname
-  if [[ ! -e ${fileinputname} ]]; then
-    touch ${fileinputname}
-    chmod +x ${fileinputname}
-    vim ${fileinputname}
-  elif [[ -e ${fileinputname} ]]; then
-    print "File exists. Exiting."
-    return 0
-  fi
-}
-
 # vim: set et ts=2 sw=2:
