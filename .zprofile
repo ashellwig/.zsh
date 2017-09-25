@@ -5,7 +5,6 @@
 # Purpose: Set environment/options for            ##
 #    login shells                                 ##
 ####################################################
-emulate zsh
 
 # --- Variables ---
 # Terminal
@@ -20,8 +19,8 @@ fi
 # Browser
 export BROWSER='chromium'
 # Editor
-export EDITOR=/usr/bin/vim
-export VISUAL=/usr/bin/code
+export EDITOR='vim'
+export VISUAL='vim'
 export VI='vim'
 export PAGER='less'
 # Language
@@ -50,7 +49,6 @@ path=(
   ~/parity/target/release
   ~/parity/target/release
   ~/.local/bin
-  ~/anaconda3/bin
 )
 export PATH="${path}"
 unset cdpath path

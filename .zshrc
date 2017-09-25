@@ -39,5 +39,9 @@ fi
 . ${ZDOTDIR}/settings/keybindings.zsh
 # RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 # vim: set et ts=2 sw=2:
+
