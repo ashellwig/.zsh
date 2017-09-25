@@ -69,42 +69,41 @@ END
 
 # --- System ---
   if [[ "$up_sys" = true ]]; then
-    printf "\033[1;33m===> Updating SYSTEM...\033[0m"
+    printf "\n\033[1;33m===> Updating SYSTEM...\033[0m"
     echo "$(sudo pacman -Syu --noconfirm)"
     echo "$(yaourt -Syua --noconfirm)"
-    printf "\033[32mUpdated System.\033[0m"
+    printf "\n\033[32mUpdated System.\033[0m"
   fi
 
 # --- Zsh ---
   if [[ "$up_zsh" = true ]]; then
-    printf "\033[1;33m===> Updating ZSH...\033[0m"
+    printf "\n\033[1;33m===> Updating ZSH...\033[0m"
     cd "${ZDOTDIR}"
     git submodule update --init --recursive
-    printf "\033[32mUpdated Zsh.\033[0m"
+    printf "\n\033[32mUpdated Zsh.\033[0m"
   fi
 
 # --- Vim ---
   if [[ "$up_vim" = true ]]; then
-    printf "\033[1;33m===> Updating VIM...\033[0m"
+    printf "\n\033[1;33m===> Updating VIM...\033[0m"
     cd "${HOME}" && cd "${HOME}/.vim/bundle"
     vim '+PluginInstall' '+PluginUpdate' '+PluginClean' '+qall'
     cd "${HOME}/.vim/bundle/YouCompleteMe"
     ./install.sh '--system-libclang' '--clang-completer'
     cd "$HOME"
-    printf "\033[32mUpdated Vim.\033[0m"
+    printf "\n\033[32mUpdated Vim.\033[0m"
   fi
 
 # --- Parity ---
   if [[ "$up_parity" = true ]]; then
-    printf "\033[1;32m===> Updating Parity...\033[0m"
+    printf "\n\033[1;32m===> Updating Parity...\033[0m"
     cd "${HOME}"
     rustup 'update' ;
-    cargo update ;
     cd "${HOME}/parity" &&
       cargo 'build' &&
-      cargo 'build' '--release'
+      cargo 'build' '--release' ;
     cd "$HOME"
-    printf "\033[32mUpdated Parity.\033[0m"
+    printf "\n\033[32mUpdated Parity.\033[0m"
   fi
 
 # --- No Argument ---
