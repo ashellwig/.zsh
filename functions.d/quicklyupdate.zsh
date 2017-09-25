@@ -5,7 +5,7 @@ quicklyupdate() {
 
 # --- Options ---
   # Requred
-  local key="$*"
+  local key="$1"
   # System
   local up_sys=false
   # Zsh
@@ -16,32 +16,38 @@ quicklyupdate() {
   local up_parity=false
 
   # Parse Options
-  while [ -n "$key" ]; do
-    case "${key}" in
-      -s|--system)
-        local up_sys=true
-        shift 2
-        ;;
-      -z|--zsh)
-        local up_zsh=true
-        shift
-        ;;
-      -v|--vim)
-        local up_vim=true
-        shift
-        ;;
-      -p|--parity)
-        local up_parity=true
-        shift
-        ;;
-      -h|--help)
-        local show_help=true
-        ;;
-      *)
-        return
-        ;;
-    esac
-  done
+  case "${key}" in
+    -s|--system)
+      local up_sys=true &&
+      shift
+      ;;
+    -z|--zsh)
+      local up_zsh=true &&
+      shift
+      ;;
+    -v|--vim)
+      local up_vim=true &&
+      shift
+      ;;
+    -p|--parity)
+      local up_parity=true &&
+      shift
+      ;;
+    -a|--all)
+      local up_sys=true
+      local up_zsh=true
+      local up_vim=true
+      local up_parity=true
+      shift
+      ;;
+    -h|--help)
+      local show_help=true
+      ;;
+    *)
+      echo -e "$* not found! Try \"quicklyupdate [-h|--help]\""
+      return
+      ;;
+  esac
 
 # --- Help ---
   if [[ "$show_help" = true ]]; then
@@ -56,6 +62,7 @@ quicklyupdate() {
 -z                     --zsh                      update zsh functions
 -v                     --vim                      update vim plugins
 -p                     --parity                   update parity (and rust)
+-a                     --all                      update all
 END
 )"
   fi
@@ -74,6 +81,35 @@ END
     cd "${ZDOTDIR}"
     git submodule update --init --recursive
     printf "\033[32mUpdated Zsh.\033[0m"
+  fi
+
+# --- Vim ---
+  if [[ "$up_vim" = true ]]; then
+    printf "\033[1;33m===> Updating VIM...\033[0m"
+    cd "${HOME}" && cd "${HOME}/.vim/bundle"
+    vim '+PluginInstall' '+PluginUpdate' '+PluginClean' '+qall'
+    cd "${HOME}/.vim/bundle/YouCompleteMe"
+    ./install.sh '--system-libclang' '--clang-completer'
+    cd "$HOME"
+    printf "\033[32mUpdated Vim.\033[0m"
+  fi
+
+# --- Parity ---
+  if [[ "$up_parity" = true ]]; then
+    printf "\033[1;32m===> Updating Parity...\033[0m"
+    cd "${HOME}"
+    rustup 'update' ;
+    cargo update ;
+    cd "${HOME}/parity" &&
+      cargo 'build' &&
+      cargo 'build' '--release'
+    cd "$HOME"
+    printf "\033[32mUpdated Parity.\033[0m"
+  fi
+
+# --- No Argument ---
+  if [[ "$#" -eq 0 ]]; then
+    echo "$0" '--all'
   fi
 }
 

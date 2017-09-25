@@ -34,7 +34,6 @@ if (( $#commands[(i)lesspipe(|.sh)] )); then
 fi
 
 # --- Path ---
-typeset -gU cdpath path
 # Directories
 cdpath=(
   $cdpath
@@ -51,4 +50,3 @@ path=(
   ~/.local/bin
 )
 export PATH="${path}"
-unset cdpath path
