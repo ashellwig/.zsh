@@ -87,9 +87,7 @@ END
   if [[ "$up_vim" = true ]]; then
     printf "\n\033[1;33m===> Updating VIM...\033[0m"
     cd "${HOME}" && cd "${HOME}/.vim/bundle"
-    vim '+PluginInstall' '+PluginUpdate' '+PluginClean' '+qall'
-    cd "${HOME}/.vim/bundle/YouCompleteMe"
-    ./install.sh '--system-libclang' '--clang-completer'
+    vim '+PlugInstall' '+PlugUpdate' '+PlugClean' '+qall'
     cd "$HOME"
     printf "\n\033[32mUpdated Vim.\033[0m"
   fi

@@ -3,6 +3,8 @@
 # @ashellwig                                      ##
 # Purpose: Set options interactive shell prompt   ##
 ####################################################
+
+# Define $PS1
 # Load the Powerlevel 9k Theme
 if [[ -d ${ZDOTDIR}/functions/powerlevel9k ]]; then
   # Prompt Elements
