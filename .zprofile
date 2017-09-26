@@ -7,15 +7,8 @@
 ####################################################
 
 # --- Variables ---
-# Terminal
-if [[ ! -v ZDOTDIR ]]; then
-  if [[ -d ${HOME}/.zsh ]]; then
-    export ZDOTDIR=/home/ahellwig/.zsh
-  fi
-fi
-if [[ -n "$(command -v termite)" ]]; then
-  export TERM='xterm-termite'
-fi
+# Zsh
+export ZDOTDIR="${HOME}/.zsh"
 # Browser
 export BROWSER='chromium'
 # Editor
@@ -34,19 +27,17 @@ if (( $#commands[(i)lesspipe(|.sh)] )); then
 fi
 
 # --- Path ---
-# Directories
-cdpath=(
-  $cdpath
-)
+typeset -U path
 # Programs
 path=(
+  /bin
+  /usr/bin
+  /sbin
   /usr/local/{bin,sbin}
   ~/.rvm/gems/ruby-2.41/bin
   ~/.rvmbin
   ~/anaconda3/bin
   ~/.cargo/bin
   ~/parity/target/release
-  ~/parity/target/release
   ~/.local/bin
 )
-export PATH="${path}"
