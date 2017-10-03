@@ -34,7 +34,7 @@ git clone https://github.com/ashellwig/.zsh.git ${ZDOTDIR}
     highlighing of commands whilst they are typed at a zsh prompt into an
     interactive terminal.
 * `./functions.d`
-  * See [.zsh/functions.d/README.md]()
+  * See [.zsh/functions.d/README.md](https://github.com/ashellwig/.zsh/blob/master/functions.d/README.md)
 * `./options`
   * See [.zsh/options/README.md]()
 * `./settings`
