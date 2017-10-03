@@ -26,6 +26,7 @@ Creates a new executable file. This is a script I was essentially using to
 learn how to use options in shell scripts, so it is a bit messy.
 
 ```shell
+newexecfile -f <filename> [-d <directory>] [-h]
 Option                         Purpose
 -------------------------------------------------------
 -n         --name             filename to save as
@@ -36,8 +37,9 @@ Option                         Purpose
 * [./quicklyupdate.zsh]()
 
 ```shell
-\033[1mShort Option    Long Option                Use\033[0m
-\033[1m------------------------------------------------------------\033[0m
+quicklyupdate [-s|--system] [-z|--zsh] [-v|--vim] [-p|--parity] [-h|--help]
+Short Option    Long Option                Use
+------------------------------------------------------------
 -h                     --help                     Show help and exit
 -s                     --system                   update system (pacman and yaourt)
 -z                     --zsh                      update zsh functions
