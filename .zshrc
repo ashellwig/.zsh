@@ -4,10 +4,26 @@
 # Purpose: Set options for interactive shells     ##
 ####################################################
 
-# --- Functions ---
+# --- Path ---
+# $PATH
+typeset -U path
+path=(
+  /bin
+  /sbin
+  /usr/{bin.sbin}
+  /usr/local/{bin,sbin}
+  ~/anaconda3/bin               # Python
+  ~/.rvm/gems/ruby-2.41/bin     # Ruby
+  ~/.rvmbin                     # Ruby
+  ~/.cargo/bin                  # Rust
+  ~/parity/target/release       # Parity
+  ~/.local/bin                  # Local Bin
+)
+# $FPATH
 typeset -U fpath
 fpath=($fpath ${ZDOTDIR}/functions/zsh-completions/src)
 for func in $^fpath/*(N-.x:t); autoload $func
+# --- Functions ---
 # Completion
 . ${ZDOTDIR}/settings/completionsettings.zsh
 # Drop-in Functions and Scripts
@@ -24,7 +40,6 @@ if [[ -d ${ZDOTDIR}/plugins ]]; then
     done
   fi
 fi
-
 # --- Options / Settings ---
 # Syntax Highlighting
 . ${ZDOTDIR}/settings/syntaxhighlightsettings.zsh
@@ -40,6 +55,8 @@ fi
 . ${ZDOTDIR}/settings/keybindings.zsh
 # Programming
 . ${ZDOTDIR}/settings/programmingenvs.zsh
+
+
 
 # vim: set et ts=2 sw=2:
 

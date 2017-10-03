@@ -29,6 +29,7 @@ fi
 # --- Path ---
 typeset -U path
 # Programs
+typeset -U path
 path=(
   /bin
   /usr/bin

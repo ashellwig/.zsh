@@ -34,16 +34,10 @@ fi
 
 # --- Path ---
 typeset -U path
-# Programs
 path=(
   /bin
   /usr/bin
   /sbin
   /usr/local/{bin,sbin}
-  ~/.rvm/gems/ruby-2.41/bin
-  ~/.rvmbin
-  ~/anaconda3/bin
-  ~/.cargo/bin
-  ~/parity/target/release
-  ~/.local/bin
+
 )
