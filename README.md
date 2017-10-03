@@ -34,14 +34,11 @@ git clone https://github.com/ashellwig/.zsh.git ${ZDOTDIR}
     highlighing of commands whilst they are typed at a zsh prompt into an
     interactive terminal.
 * `./functions.d`
-  * [aliases.zsh](https://github.com/ashellwig/.zsh/blob/master/functions.d/aliases.zsh)
-    * Personal command aliases
-  * [prompt.zsh](https://github.com/ashellwig/.zsh/blob/master/functions.d/prompt.zsh)
-    * Sets the prompt to `../functions/powerlevel9k` if available, otherwise sets
-    to `promt -s fade blue`.
-  * [short_functions.zsh](https://github.com/ashellwig/.zsh/blob/master/functions.d/short_functions.zsh)
-    * Used for smaller functions and each will be broken into their own file
-    at a later time.
+  * See [.zsh/functions.d/README.md]()
+* `./options`
+  * See [.zsh/options/README.md]()
+* `./settings`
+  * See [.zsh/settings/README.md]()
 
 <!DOCTYPE html>
 <html>
@@ -74,7 +71,7 @@ git clone https://github.com/ashellwig/.zsh.git ${ZDOTDIR}
 	│   ├── <b class="DIR">powerlevel9k</b><br>
 	│   ├── <b class="DIR">zsh-completions</b><br>
 	│   └── <b class="DIR">zsh-syntax-highlighting</b><br>
-	├── <b class="DIR">functions.d><br>
+	├── <b class="DIR">functions.d<br>
 	│   ├── <b class="DIR">edit_zsh.zsh</b><br>
 	│   ├── <b class="DIR">makenewdir.zsh</b><br>
 	│   ├── <b class="DIR">newexecfile.zsh</b><br>
@@ -87,7 +84,7 @@ git clone https://github.com/ashellwig/.zsh.git ${ZDOTDIR}
 	│   ├── <b class="NORM">promptopts.zsh</b><br>
 	│   └── <b class="NORM">zshopts.zsh</b><br>
 	├── <b class="DIR">plugins</b><br>
-	├── <b class="DIR">setttings><br>
+	├── <b class="DIR">setttings<br>
 	│   ├── <b class="DIR">completionsettings.zsh</b><br>
 	│   ├── <b class="DIR">historysettings.zsh</b><br>
 	│   ├── <b class="DIR">keybindings.zsh</b><br>
