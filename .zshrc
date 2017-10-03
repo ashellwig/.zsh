@@ -23,6 +23,7 @@ path=(
 typeset -U fpath
 fpath=($fpath ${ZDOTDIR}/functions/zsh-completions/src)
 for func in $^fpath/*(N-.x:t); autoload $func
+
 # --- Functions ---
 # Completion
 . ${ZDOTDIR}/settings/completionsettings.zsh
@@ -40,6 +41,7 @@ if [[ -d ${ZDOTDIR}/plugins ]]; then
     done
   fi
 fi
+
 # --- Options / Settings ---
 # Syntax Highlighting
 . ${ZDOTDIR}/settings/syntaxhighlightsettings.zsh
