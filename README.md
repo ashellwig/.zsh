@@ -19,9 +19,9 @@ git clone https://github.com/ashellwig/.zsh.git ${ZDOTDIR}
 
 ## Features
 * `./functions`
-  * []()
-    * Type in any part of any command from history and then press chosen keys,
-    such as the UP and DOWN arrows, to cycle through matches in history
+  * [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/)
+    * [Fish](http://fishshell.com/)-like fast/unobtrusive autosuggestions for zsh
+    * It suggests commands as you type, based on command history.
   * [history-substring-search](https://github.com/zsh-users/zsh-history-substring-search)
     * Type in any part of any command from history and then press chosen keys,
     such as the UP and DOWN arrows, to cycle through matches in history

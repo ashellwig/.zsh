@@ -55,6 +55,8 @@ if [[ -d ${ZDOTDIR}/options ]]; then
 fi
 # Keybindings
 . ${ZDOTDIR}/settings/keybindings.zsh
+# Autosuggestions
+. ${ZDOTDIR}/functions/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Programming
 . ${ZDOTDIR}/settings/programmingenvs.zsh
 
