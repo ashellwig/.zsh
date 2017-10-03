@@ -10,3 +10,6 @@
 [submodule "functions/history-substring-search"]
 	path = functions/history-substring-search
 	url = https://github.com/zsh-users/zsh-history-substring-search
+[submodule "functions/zsh-autosuggestions"]
+	path = functions/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions.git
