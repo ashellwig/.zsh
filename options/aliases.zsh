@@ -26,7 +26,8 @@ alias i3l='i3-msg move workspace to output left'
 
 # --- System Management ---
 # Zsh
-alias szs="source ${ZDOTDIR}/.zshrc"
+alias -g szs="source ${ZDOTDIR}/.zshrc"
 alias -g sc='sudo systemctl'
+alias -g jc='sudo journalctl'
 
 # vim: set et ft=zsh sw=2 ts=2:
