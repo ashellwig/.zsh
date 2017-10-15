@@ -6,7 +6,8 @@
 
 # --- Colors ---
 # ls
-alias ls='ls -lFAh --color=always'
+alias ls='ls -a --color=always'
+alias lsa='ls -lFAh --color=always'
 alias newestdir="ls -ld *(/om[1])"
 # dmesg
 alias kernellogs="dmesg --human --color=always | most"
