@@ -4,22 +4,6 @@
 # Purpose: Set-up command aliases                 ##
 ####################################################
 
-# --- Colors ---
-# ls
-alias ls='ls -a --color=always'
-alias lsa='ls -lFAh --color=always'
-alias newestdir="ls -ld *(/om[1])"
-# dmesg
-alias kernellogs="dmesg --human --color=always | most"
-# Testing TermCap
-alias textef="printf $(cat <<END
-"\033[4;31mUnderline\033[0m
-\033[3;32mItalic\033[0m
-\033[1;33mBold\033[0m
-\033[0;35mPurple\033[0m"
-END
-)"
-
 # --- Movement ---
 # i3
 alias i3r='i3-msg move workspace to output right'
@@ -27,8 +11,24 @@ alias i3l='i3-msg move workspace to output left'
 
 # --- System Management ---
 # Zsh
-alias -g szs="source ${ZDOTDIR}/.zshrc"
+alias szs="source ${ZDOTDIR}/.zshrc"
+# Systemd
 alias -g sc='sudo systemctl'
+alias scs='sc status'
+alias scb='sc start'
+alias scstop='sc stop'
+alias scd='sc disable'
+alias sce='sc enable'
+# Logs
 alias -g jc='sudo journalctl'
+alias kernellogs="dmesg --human --color=always --follow | most"
+# Pacman
+alias -g pa='sudo pacman'
+alias pas='pa -Ss'
+alias pai='pa -S'
+# ls
+alias ls='ls -A --color=always'
+alias lsa='ls -lFAh --color=always'
+alias newestdir="ls -ld *(/om[1])"
 
 # vim: set et ft=zsh sw=2 ts=2:
