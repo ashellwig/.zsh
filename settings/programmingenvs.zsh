@@ -4,13 +4,18 @@
 #       programming environments
 
 
+# --- Go ---
+if [[ -d "${HOME}/go" ]]; then
+  export GOPATH="~/go"
+fi
+
 # --- RVM ---
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+# [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 # --- NVM ---
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 # --- Base16-Shell ---
-BASE16_SHELL="$HOME/.zsh/functions/base16-shell"
-[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$(
-  $BASE16_SHELL/profile_helper.sh
-  )"
+#BASE16_SHELL="$HOME/.zsh/functions/base16-shell"
+#[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$(
+#  $BASE16_SHELL/profile_helper.sh
+#  )"

@@ -5,16 +5,6 @@
 # --- Functions ---
 autoload ${ZDOTDIR}/functions/zsh-completions/src
 autoload compinit && compinit
-# Quick-Change Directories
-rationalise-dot() {
-  if [[ $LBUFFER = *.. ]]; then
-    LBUFFER+=/..
-  else
-    LBUFFER+=.
-  fi
-}
-zle -N rationalise-dot
-bindkey . rationalise-dot
 
 # --- Style ---
 # Cache

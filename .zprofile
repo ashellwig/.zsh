@@ -31,9 +31,8 @@ typeset -U path
 # Programs
 typeset -U path
 path=(
-  /bin
-  /usr/bin
-  /sbin
+  /{bin,sbin}
+  /usr/{bin,sbin}
   /usr/local/{bin,sbin}
   ~/.rvm/gems/ruby-2.41/bin
   ~/.rvmbin
