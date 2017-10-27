@@ -6,7 +6,7 @@
 
 # --- Go ---
 if [[ -d "${HOME}/go" ]]; then
-  export GOPATH="~/go"
+  export GOPATH="$HOME/go"
 fi
 
 # --- RVM ---
