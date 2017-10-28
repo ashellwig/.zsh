@@ -18,6 +18,7 @@ export XDG_MUSIC_DIR="$HOME/Music"
 export XDG_PICTURES_DIR="$HOME/Pictures"
 export XDG_VIDEOS_DIR="$HOME/Videos"
 # Shell
+export ZSH_CONFIG_DIRS="$HOME/.zsh"
 export ZDOTDIR="${HOME}/.zsh"
 # Browser
 export BROWSER='chromium'
@@ -30,6 +31,8 @@ export PAGER='less'
 if [[ -z "$LANG" ]]; then
   export LANG='en_US.UTF-8'
 fi
+# SSH
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR"'/keeagent.socket'
 # LESS
 export LESS='-F -g -i -M -R -S -w -X -z-4'
 if (( $#commands[(i)lesspipe(|.sh)] )); then
@@ -37,7 +40,6 @@ if (( $#commands[(i)lesspipe(|.sh)] )); then
 fi
 
 # --- Path ---
-typeset -U path
 # Programs
 typeset -U path
 path=(

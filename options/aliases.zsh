@@ -22,12 +22,19 @@ alias sce='sc enable'
 # Logs
 alias -g jc='sudo journalctl'
 alias kernellogs="dmesg --human --color=always --follow | most"
+
+# --- Programs ---
 # Pacman
 alias -g pa='sudo pacman'
 alias pas='pa -Ss'
 alias pai='pa -S'
+alias blackarch-categories='sudo pacman -Sg | grep blackarch'
 # ls
 alias ls='ls -Af --color=always'
 alias lsa='ls -lFAh --color=always'
+# Parity
+if [[ -d $HOME/parity/target/release ]]; then
+  alias start-parity='parity --mode=active --min-peers=25 --max-peers=99'
+fi
 
 # vim: set et ft=zsh sw=2 ts=2:
