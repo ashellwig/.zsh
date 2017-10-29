@@ -31,8 +31,6 @@ export PAGER='less'
 if [[ -z "$LANG" ]]; then
   export LANG='en_US.UTF-8'
 fi
-# SSH
-export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR"'/keeagent.socket'
 # LESS
 export LESS='-F -g -i -M -R -S -w -X -z-4'
 if (( $#commands[(i)lesspipe(|.sh)] )); then
