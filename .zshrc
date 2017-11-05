@@ -12,6 +12,7 @@ path=(
   /sbin
   /usr/{bin.sbin}
   /usr/local/{bin,sbin}
+  ~/go/bin                      # Go
   ~/anaconda3/bin               # Python
   ~/.rvm/gems/ruby-2.41/bin     # Ruby
   ~/.rvmbin                     # Ruby

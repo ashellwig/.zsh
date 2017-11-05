@@ -41,14 +41,15 @@ fi
 # Programs
 typeset -U path
 path=(
-  /{bin,sbin}
-  /usr/{bin,sbin}
+  /bin
+  /sbin
+  /usr/{bin.sbin}
   /usr/local/{bin,sbin}
-  ~/.rvm/gems/ruby-2.41/bin
-  ~/.rvmbin
-  ~/anaconda3/bin
-  ~/.cargo/bin
-  ~/parity/target/release
-  ~/.local/bin
-  ~/go/bin
+  ~/go/bin                      # Go
+  ~/anaconda3/bin               # Python
+  ~/.rvm/gems/ruby-2.41/bin     # Ruby
+  ~/.rvmbin                     # Ruby
+  ~/.cargo/bin                  # Rust
+  ~/parity/target/release       # Parity
+  ~/.local/bin                  # Local Bin
 )

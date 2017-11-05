@@ -44,7 +44,7 @@ quicklyupdate() {
       local show_help=true
       ;;
     *)
-      echo -e "$* not found! Try \"quicklyupdate [-h|--help]\""
+      echo -e "argument not found! Try \"quicklyupdate [-h|--help]\""
       return
       ;;
   esac
@@ -52,7 +52,7 @@ quicklyupdate() {
 # --- Help ---
   if [[ "$show_help" = true ]]; then
     echo "$(cat <<END
-\033[1;33mUsage\033[0m quicklyupdate [-s|--system] [-z|--zsh] [-v|--vim]
+\033[1;33mUsage\033[0m\n quicklyupdate [-s|--system] [-z|--zsh] [-v|--vim]
        [-p|--parity] [-h|--help]
 \033[1mMaintained By:\033[0m \033[2;32mAshton Hellwig\033[0m \033[4m<ashtonscotthellwig@gmail.com>\033[0m
 \033[1mShort Option    Long Option                Use\033[0m
@@ -69,44 +69,38 @@ END
 
 # --- System ---
   if [[ "$up_sys" = true ]]; then
-    printf "\n\033[1;33m===> Updating SYSTEM...\033[0m"
-    echo "$(sudo pacman -Syu --noconfirm)"
+    printf "\n\033[1;33m===> Updating SYSTEM...\033[0m\n\n"
+    echo "$(sudo pacman -Syyyyu --noconfirm)"
     echo "$(yaourt -Syua --noconfirm)"
-    printf "\n\033[32mUpdated System.\033[0m"
+    printf "\n\033[32mUpdated System.\033[0m\n"
   fi
 
 # --- Zsh ---
   if [[ "$up_zsh" = true ]]; then
-    printf "\n\033[1;33m===> Updating ZSH...\033[0m"
+    printf "\n\033[1;33m===> Updating ZSH...\033[0m\n"
     cd "${ZDOTDIR}"
     git submodule update --init --recursive
-    printf "\n\033[32mUpdated Zsh.\033[0m"
+    printf "\n\033[32mUpdated Zsh.\033[0m\n"
   fi
 
 # --- Vim ---
   if [[ "$up_vim" = true ]]; then
-    printf "\n\033[1;33m===> Updating VIM...\033[0m"
-    cd "${HOME}" && cd "${HOME}/.vim/bundle"
+    printf "\n\033[1;33m===> Updating VIM...\033[0m\n"
     vim '+PlugInstall' '+PlugUpdate' '+PlugClean' '+qall'
     cd "$HOME"
-    printf "\n\033[32mUpdated Vim.\033[0m"
+    printf "\n\033[32mUpdated Vim.\033[0m\n"
   fi
 
 # --- Parity ---
   if [[ "$up_parity" = true ]]; then
-    printf "\n\033[1;32m===> Updating Parity...\033[0m"
+    printf "\n\033[1;32m===> Updating Parity...\033[0m\n"
     cd "${HOME}"
     rustup 'update' ;
     cd "${HOME}/parity" &&
       cargo 'build' &&
       cargo 'build' '--release' ;
     cd "$HOME"
-    printf "\n\033[32mUpdated Parity.\033[0m"
-  fi
-
-# --- No Argument ---
-  if [[ "$#" -eq 0 ]]; then
-    echo "$0" '--all'
+    printf "\n\033[32mUpdated Parity.\033[0m\n"
   fi
 }
 

@@ -36,5 +36,9 @@ alias lsa='ls -lFAh --color=always'
 if [[ -d $HOME/parity/target/release ]]; then
   alias start-parity='parity --mode=active --min-peers=25 --max-peers=99'
 fi
+# QEMU (KVM)
+if [[ -d $HOME/Virtual ]]; then
+  alias start-virtual='qemu-system-x86_64 -drive file=/home/ahellwig/Virtual/Windows/windows10harddrive,format=raw -boot order=d -m 4000 -enable-kvm -cpu host -usb'
+fi
 
 # vim: set et ft=zsh sw=2 ts=2:
