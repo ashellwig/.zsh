@@ -6,20 +6,7 @@
 
 # --- Path ---
 # $PATH
-typeset -U path
-path=(
-  /bin
-  /sbin
-  /usr/{bin.sbin}
-  /usr/local/{bin,sbin}
-  ~/go/bin                      # Go
-  ~/anaconda3/bin               # Python
-  ~/.rvm/gems/ruby-2.41/bin     # Ruby
-  ~/.rvmbin                     # Ruby
-  ~/.cargo/bin                  # Rust
-  ~/parity/target/release       # Parity
-  ~/.local/bin                  # Local Bin
-)
+source "${ZDOTDIR}/.zprofile"
 # $FPATH
 typeset -U fpath
 fpath=($fpath ${ZDOTDIR}/functions/zsh-completions/src)

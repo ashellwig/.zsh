@@ -45,7 +45,11 @@ END
 		vim '+NERDTree'
 	elif [[ "$use_code" = true ]]; then
 		cd "${HOME}/.zsh"
-		code .
+		if [[ "$(echo which code)" == "" ]]; then
+		  code-insiders .
+    else
+      code .
+    fi
 		exit "$0"
 	fi
 	## Fail if $#>1

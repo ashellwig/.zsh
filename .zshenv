@@ -6,11 +6,14 @@
 ####################################################
 
 # --- Login Shell? ---
-if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR}/.zprofile" ]]; then
-  source "${ZDOTDIR}/.zprofile"
-else
-  # No matter, the settings here would stick anyway.
-  source "${ZDOTDIR}/.zprofile"
-fi
+# if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR}/.zprofile" ]]; then
+#   source "${ZDOTDIR}/.zprofile"
+# else
+#   # No matter, the settings here would stick anyway.
+#   source "${ZDOTDIR}/.zprofile"
+# fi
+
+# --- Source Env ---
+source "${ZDOTDIR}/.zprofile"
 
 # vim: set et ts=2 sw=2 ft=zsh:
