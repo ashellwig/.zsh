@@ -44,14 +44,10 @@ END
 		cd "${HOME}/.zsh"
 		vim '+NERDTree'
 	elif [[ "$use_code" = true ]]; then
-		cd "${HOME}/.zsh"
-		if [[ "$(echo which code)" == "" ]]; then
-		  code-insiders .
-    else
-      code .
-    fi
-		exit "$0"
-	fi
+	  cd "${HOME}/.zsh"
+	  code-insiders .
+  fi
+	exit "$0"
 	## Fail if $#>1
 	if [[ "$#" != 1 ]]; then
 		echo -e "\033[1;31mNot enough/too many arguments!\033[0m See \"${0}\" -h for details"
