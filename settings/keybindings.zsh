@@ -11,3 +11,5 @@ bindkey '^[[H' beginning-of-line
 bindkey '^[[F' end-of-line
 bindkey '^[[3~' delete-char
 bindkey '^[[2~' overwrite-mode
+
+# vim: set et ts=2 sw=2 ft=zsh:

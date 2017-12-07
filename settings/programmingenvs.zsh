@@ -3,10 +3,12 @@
 # Purpose: Provide access to package manager attached to
 #       programming environments
 
+
 # --- C/C++ ---
 # Compiler Option
 export CC=gcc
 export CXX=g++
+
 
 # --- Go ---
 # GOPATH
@@ -14,11 +16,16 @@ if [[ -d "${HOME}/go" ]]; then
   export GOPATH="$HOME/go"
 fi
 
+
+# --- Node ---
+# NVM
+export NVM_DIR="$HOME/.nvm"
+export NVM_SOURCE="/usr/share/nvm"
+[ -s "$NVM_SOURCE/nvm.sh" ] && . "$NVM_SOURCE/nvm.sh"
+
+
 # --- Ruby ---
 # RVM
 # [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
-# --- Node ---
-# NVM
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+# vim: set et ts=2 sw=2 ft=zsh:

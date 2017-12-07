@@ -11,3 +11,5 @@ if [[ -d ${ZDOTDIR}/functions/zsh-syntax-highlighting ]]; then
     'mkdir' 'fg=white,bold,bg=green'
 )
 fi
+
+# vim: set et ts=2 sw=2 ft=zsh:
