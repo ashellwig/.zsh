@@ -34,13 +34,17 @@ path=(
 	/sbin
 	/usr/{bin,sbin}
 	/usr/local/{bin,sbin}
+	~/.cargo/bin # Rust
+	~/.local/bin # Local Bin
+	~/.yarn/bin
+	~/.nvm/versions/node/bin
+)
+
+# Path - When needed
 	# /usr/lib/jvm/default/bin        # JVM (Arch Bypass)
-	~/go/bin # Go
-	~/anaconda3/bin # Python
+	#~/go/bin # Go
+	#~/anaconda3/bin # Python
 	# ~/.rvm/gems/ruby-2.41/bin       # Ruby
 	# ~/.rvmbin                       # Ruby
-	~/.cargo/bin # Rust
-	~/parity/target/release         # Parity
-	~/.nvm/versions/node/v8.9.2/bin # NVM
-	~/.local/bin # Local Bin
-)
+	#~/parity/target/release         # Parity
+	#~/.nvm/versions/node/v8.9.2/bin # NVM

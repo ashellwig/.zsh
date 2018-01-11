@@ -12,17 +12,18 @@ export CXX=g++
 
 # --- Go ---
 # GOPATH
-if [[ -d "${HOME}/go" ]]; then
-  export GOPATH="$HOME/go"
-fi
+#if [[ -d "${HOME}/go" ]]; then
+#  export GOPATH="$HOME/go"
+#fi
 
 
 # --- Node ---
 # NVM
-export NVM_DIR="$HOME/.nvm"
-export NVM_SOURCE="/usr/share/nvm"
-[ -s "$NVM_SOURCE/nvm.sh" ] && . "$NVM_SOURCE/nvm.sh"
-
+source /usr/share/nvm/init-nvm.sh
+[ -z "$NVM_DIR" ] && export NVM_DIR="$HOME/.nvm"
+source /usr/share/nvm/nvm.sh
+source /usr/share/nvm/bash_completion
+source /usr/share/nvm/install-nvm-exec
 
 # --- Ruby ---
 # RVM
