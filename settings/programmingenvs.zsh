@@ -12,9 +12,7 @@ export CXX=g++
 
 # --- Go ---
 # GOPATH
-#if [[ -d "${HOME}/go" ]]; then
-#  export GOPATH="$HOME/go"
-#fi
+export GOPATH="$HOME/go"
 
 
 # --- Node ---

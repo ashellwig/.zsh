@@ -20,31 +20,21 @@ export EDITOR='vim'
 export VISUAL='vim'
 export VI='vim'
 export PAGER='less'
-# Language
-export LANG='en_US.UTF-8'
-# LESS
-export LESS='-F -g -i -M -R -S -w -X -z-4'
-
 
 # --- Path ---
 # Programs
 typeset -U path
+source /etc/profile
 path=(
 	/bin
 	/sbin
 	/usr/{bin,sbin}
 	/usr/local/{bin,sbin}
-	~/.cargo/bin # Rust
-	~/.local/bin # Local Bin
-	~/.yarn/bin
-	~/.nvm/versions/node/bin
+	~/.cargo/bin     # Rust
+	~/racket/bin     # Racket
+	~/go/bin         # Go
+	~/.local/bin
+	~/anaconda3/bin  # Python
+	~/.yarn/bin      # Node.js
 )
 
-# Path - When needed
-	# /usr/lib/jvm/default/bin        # JVM (Arch Bypass)
-	#~/go/bin # Go
-	#~/anaconda3/bin # Python
-	# ~/.rvm/gems/ruby-2.41/bin       # Ruby
-	# ~/.rvmbin                       # Ruby
-	#~/parity/target/release         # Parity
-	#~/.nvm/versions/node/v8.9.2/bin # NVM

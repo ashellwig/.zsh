@@ -13,7 +13,7 @@ quicklyupdate() {
   # Vim
   local up_vim=false
   # Parity
-  local up_parity=false
+  local up_rust=false
 
   # Parse Options
   case "${key}" in
@@ -29,15 +29,15 @@ quicklyupdate() {
       local up_vim=true &&
       shift
       ;;
-    -p|--parity)
-      local up_parity=true &&
+    -r|--rust)
+      local up_rust=true &&
       shift
       ;;
     -a|--all)
       local up_sys=true
       local up_zsh=true
       local up_vim=true
-      local up_parity=true
+      local up_rust=true
       shift
       ;;
     -h|--help)
@@ -53,7 +53,7 @@ quicklyupdate() {
   if [[ "$show_help" = true ]]; then
     echo "$(cat <<END
 \033[1;33mUsage\033[0m\n quicklyupdate [-s|--system] [-z|--zsh] [-v|--vim]
-       [-p|--parity] [-h|--help]
+       [-r|--rust] [-h|--help]
 \033[1mMaintained By:\033[0m \033[2;32mAshton Hellwig\033[0m \033[4m<ashtonscotthellwig@gmail.com>\033[0m
 \033[1mShort Option    Long Option                Use\033[0m
 \033[1m------------------------------------------------------------\033[0m
@@ -61,7 +61,7 @@ quicklyupdate() {
 -s                     --system                   update system (pacman and yaourt)
 -z                     --zsh                      update zsh functions
 -v                     --vim                      update vim plugins
--p                     --parity                   update parity (and rust)
+-r                     --rust                     update parity (and rust)
 -a                     --all                      update all
 END
 )"
@@ -70,8 +70,12 @@ END
 # --- System ---
   if [[ "$up_sys" = true ]]; then
     printf "\n\033[1;33m===> Updating SYSTEM...\033[0m\n\n"
-    echo "$(sudo pacman -Syyyyu --noconfirm)"
-    echo "$(yaourt -Syua --noconfirm)"
+    sudo pacman '-Syyyyu' '--noconfirm'
+    sudo yaourt '-Syua' '--noconfirm'
+    printf "\n\033[1;32m===> Removing Orphaned Packages \033[0m\n"
+    sudo pacman '-Rns' "$(pacman -Qtdq)"
+    printf "\n\033[1;32m===> Packages Upgraded: \033[0m\n"
+    echo '-e' "\n\033[1;31mTODO: Show upgraded packages\033[0m\n"
     printf "\n\033[32mUpdated System.\033[0m\n"
   fi
 
@@ -92,15 +96,12 @@ END
   fi
 
 # --- Parity ---
-  if [[ "$up_parity" = true ]]; then
-    printf "\n\033[1;32m===> Updating Parity...\033[0m\n"
+  if [[ "$up_rust" = true ]]; then
+    printf "\n\033[1;32m===> Updating Rust...\033[0m\n"
     cd "${HOME}"
     rustup 'update' ;
-    cd "${HOME}/parity" &&
-      cargo 'build' &&
-      cargo 'build' '--release' ;
-    cd "$HOME"
-    printf "\n\033[32mUpdated Parity.\033[0m\n"
+    rustup 'update' '--toolchain=nightly' ;
+    printf "\n\033[32mUpdated Rust.\033[0m\n"
   fi
 }
 

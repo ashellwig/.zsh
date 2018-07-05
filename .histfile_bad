@@ -1,0 +1,1038 @@
+yarn run nuxt
+now
+yarn global add now
+now
+./node_modules/now/download/dist/now
+yarn
+now
+yarn run now
+now
+yarn run now
+yarn run now --public
+yarn run build:gh-pages ; yarn run deploy
+git status
+git add * .**
+git commit -m 'package.json'
+git push -u origin master
+yarn run build:gh-pages ; yarn run deploy
+yarn add cross-env --dev
+quicklyupdate -a ; sc poweroff
+startx
+i3r
+cd OneDrive/CSC160
+mkdir Tests
+cd Tests
+mkdir Module-2
+cd Module-2
+code .
+sudo onedrive ; onedrice
+onedrive --help
+onedrive --resync
+make
+make
+./main.bin
+./main.bin
+./main.bin
+make
+./main.bin
+make
+./main.bin
+make
+./main.bin
+make
+./main.bin
+make
+./main.bin
+make
+./main.bin
+make
+./main.bin
+make
+main.bin
+./main.bin
+make
+./main.bin
+make
+./main.bin
+make clean
+make
+make main.bin
+make all
+make all
+make all
+./main.bin
+escrotum --select ./question13.png --multi-disp
+escrotum --select ./question13.png --selection-delay 10
+make all
+./main.bin
+make all
+make all
+make all
+./main.bin
+./main.bin
+./main.bin
+make
+./main.bin
+make all
+make
+make all
+./main.bin
+make clean
+make all
+yaourt -R vscode-bin
+yaourt -R vscode
+yaourt vscode
+yaourt -S code
+yaourt code
+yaourt visual
+yaourt visual-studio
+yaourt -Rsnv --noconfirm visual-studio-code-bin
+yaourt -S visual-studio-code-bin --noconfirm
+rm -rf .vscode
+yaourt -S visual-studio-code-bin --noconfirm
+rm -rf OneDrive
+onedrive --resync
+code .
+which clang-format
+perl
+sudo pacman -S mlocate
+ppm
+sudo pacman -Ss cpan
+sudo pacman -Ss perl-cpan
+sudo pacman -S perl-cpan
+sudo pacman -S perl-cpan-meta
+sudo pacman -S cpan
+yaourt latex-indent
+yaourt latexindent
+sudo cpan
+yaourt -S cpan
+yaourt -Ss cpan
+yaourt -S rakudo --noconfirm
+echo $PATH
+updatedb
+sudo updatedb
+cpan
+perl -h | grep cpan
+perl -h | grep install
+perl -h | grep run
+perl -MCPAN
+time perl -MCPAN
+cd _Scratch
+make all
+make all
+uptime
+ppm
+logour
+logout
+yaourt -Syua
+yaourt -S global --noconfirm
+startx
+logout
+cpan
+perl6-install-dist
+perl6-install-dist arch
+perl
+perl6-m
+perl6
+echo PATH="${PATH}:/usr/local/lib64/perl5:/usr/local/share/perl5:/usr/lib64/perl5/vendor_perl:/usr/share/perl5/vendor_perl:/usr/lib64/perl5:/usr/share/perl5
+echo PATH="${PATH}:/usr/local/lib64/perl5:/usr/local/share/perl5:/usr/lib64/perl5/vendor_perl:/usr/share/perl5/vendor_perl:/usr/lib64/perl5:/usr/share/perl5"
+export PATH="${PATH}:/usr/local/lib64/perl5:/usr/local/share/perl5:/usr/lib64/perl5/vendor_perl:/usr/share/perl5/vendor_perl:/usr/lib64/perl5:/usr/share/perl5"
+cpan
+perl
+latexindent
+edit_zsh -v
+vim ~/.zsh/.zprofile
+latexindent
+su
+cpan
+echo $PATH
+source /etc/profile
+latexindent
+startx
+quicklyupdate -a ; sc poweroff
+quicklyupdate -a
+quicklyupdate -h
+startx
+source /etc/profile
+cpan
+latexindent
+cpan YAML::Tiny
+latexindent
+sudo cpan YAML::Tiny
+latexindent
+sudo pacman -S texlive --needed
+sudo pacman -S texlive-bin texlive-core --needed
+ssh pi@192.168.0.18
+lsblk
+sudo mount /dev/sdb1 /mnt
+cd /mnt
+ls
+sudo touch ssh
+cd /
+sudo umount -R /mnt
+sc reboot
+escrotum --select ./Pictures/parity-github-hint-issue
+./parity/target/release/parity --version
+escrotum --select ./Pictures/parity-github-hint-issue.png
+escrotum --select ./Pictures/parity-github-hint-issue.png
+escrotum --select ./Pictures/parity-github-hint-issue.png
+sudo touch ssh
+rm -rf ssh
+ssh pi@192.168.0.18
+escrotum --select ./Pictures/funny-error-ssh.png
+eval $(xdg-open ./Pictures/funny-error-ssh.png)
+vim .ssh/known_hosts
+ssh pi@192.168.0.18
+exit
+startx
+quicklyupdate --all ; sc reboot
+yaourt android-ndk
+free
+free -h
+alsamixer
+cd Documents/Work
+mkdir about-ashton
+cd about-ashton
+yarn init
+ls
+startx
+startx
+logout
+htop
+sudo pacman -S htop
+htop
+cd Documents/Work/about-ashton
+ls
+code .
+yarn add babel-cli --dev
+yarn add eslint --dev
+eslint --init
+yarn
+yarn
+echo $PATH
+source /etc/profile
+yarn
+yarn
+yarn run start
+yarn run test
+yarn run start
+yarn add --dev babel-preset-env
+yarn
+yarn run start
+yarn
+yarn run start
+yarn run start
+yarn
+yarn run test
+yarn add --dev eslint-plugin-compat
+yarn
+yarn run start
+yarn remove color
+yarn
+alsamixer
+startx
+quicklyupdate -s ; sc reboot
+cd Documents/Work/about-ashton ; code .
+yarn
+yarn run start
+./node_modules/.bin/eslint init
+./node_modules/.bin/eslint --init
+yarn add --dev eslint-plugin-prettier
+yarn add --dev prettier@<=0.11.0
+yarn add --dev 'prettier@<=0.11.0'
+yarn add --dev prettier-eslint
+yarn add --dev flow-bin babel-preset-flow babel-eslint eslint-plugin-flowtype
+yarn
+yarn run test
+yarn test
+yarn test
+yarn run start
+yarn run start
+yarn test
+yarn add --dev jest babel-jest
+yarn
+yarn test
+yarn test
+yarn add --dev husky
+yarn add express compression
+yarn
+yarn test
+yarn start
+yarn add --dev nodemon
+yarn add --dev pm2
+yarn add --dev rimraf
+yarn add --dev rimraf
+yarn add 'babel-core@^7.0.0.-0'
+yarn
+yarn run start
+yarn run start
+yarn prod:build
+yarn add --dev cross-env
+yarn prod:build
+yarn prod:start
+yarn prepush
+yarn
+yarn add babel-polyfill
+yarn add --dev webpack webpack-dev-server babel-core babel-loader
+yarn
+yarn
+yarn start
+sudo killall node
+yarn
+yarn start
+yarn start
+killall node
+kill node
+ps
+sudo killall node
+yarn start
+kill node
+yarn prepush
+yarn dev:wds
+yarn dev:wds
+yarn
+yarn add --dev webpack webpack-dev-server babel-core babel-loader
+yarn
+yarn start
+yarn add --dev webpack webpack-dev-server babel-core babel-loader webpack-cli
+yarn
+yarn start
+yarn dev:wds
+git init
+git remote add origin git@gitlab.com:ashellwig/about-ashton.git
+git add .* **
+git commit -m 'initial commit'
+git push -u origin master
+startx
+sc poweroff
+onedrive
+code OneDrive/CSC160/Discussions/Module-3/Concept/
+yarn dev:wds
+yarn add react react-dom
+yarn add --dev babel-preset-react babel-plugin-flow-react-proptypes
+yarn
+yarn
+yarn run start
+yarn add react-hot-loader@next
+yarn start
+rm -rf node_modules
+yarn
+yarn start
+yarn dev:wds
+yarn dev:wds
+yarn dev:wds
+rm -rf node_modules
+yarn
+yarn run flow
+yarn run flow init
+yarn run flow init
+yarn add redux redux-actions
+yarn
+git add .* **
+git commit -m 'add react'
+git commit -m 'add react'
+yarn add immuatable --dev
+yarn add immutable --dev
+yarn
+yarn
+rm -rf node_modules
+yarn
+    "immutable": "^3.8.2",\
+
+yarn add 'immutable@4.0.0-rc.2'
+rm -rf node_modules
+yarn
+flow
+yarn
+yarn run start
+yarn
+rm -rf node_modules
+yarn
+flow
+flow
+yarn
+rm -rf node_modules
+yarn
+yarn add immutable@4.0.0-rc.2
+yarn start
+alsamixer
+startx
+sc reboot
+code OneDrive/CSC160/Discussions/Module-3/Concept/doc
+startx
+onedrive && sc poweroff
+htop
+yarn global add node-gyp
+sudo pkill -HUP pacman
+quicklyupdate -a
+quicklyupdate -s
+sudo pacman -Syyyyu --noconfirm ; yaourt -Syua --noconfirm
+sudo pacman -Syyyyu --noconfirm ; yaourt -Syua --noconfirm
+git clone https://github.com/anaida07/MEVN-boilerplate ./ashton-walks-dogs-mevn
+cd ashton-walks-dogs-mevn
+code .
+cd server
+yarn run start
+yarn
+cd client && yarn ; cd .. ; cd server && yarn
+cd ../client
+yarn run dev
+yarn run dev
+cd server
+yarn
+yarn start
+yarn add mongoose bluebird
+yarn start
+sudo killall node
+scb mongodb.service
+dmesg
+dmesg
+dmesg
+cd client
+yarn run dec
+yarn run dev
+cd server
+yarn run start
+yarn run start
+mongo
+mongod
+exit
+cd client
+yarn run dev
+cd server
+yarn run start
+yarn run start
+startx
+quicklyupdate --all ; sc poweroff
+sc reboot
+sudo pacman -Syyyyu --noconfirm ; yaourt -Syua --noconfirm
+code
+yarn run prod:stop
+git remote show
+git remote show origin
+git add .gitignore
+git status
+git commit -m 'update gitignore'
+git add .git
+git reset .git
+git add .gitignore
+git add .** ** ; git commit -m 'add react'
+git push
+rm -rf node_modules
+git status
+git add .** ** ; git commit -m 'remove ignored files'
+git add .** ** ; git commit -m 'remove ignored files'
+rm -rf node_modules
+git add .gitignore
+git commit -m 'update gitignore'
+ls
+git add .gitignore
+git commit -m 'update gitignore'
+git status
+git add .* **
+git commit -m 'delete ignored files'
+git add .* **
+git commit -m 'delete ignored files'
+git add .* **
+git commit -m 'delete ignored files'
+git reset b97b922
+git status
+git commit -a
+git push
+git push
+yarn
+yarn run prod:build
+yarn run prod:start
+sudo pkill -HUP node
+eslint --help
+./node_modules/.bin/eslint --init
+yarn add redux redux-actions
+yarn
+yarn
+alsamixer
+rm -rf node_modules
+yarn
+yarn add nerve gas
+yarn remove nerve
+yarn add immutable
+yarn
+which yo
+lsa ~/.yarn/bin/yo
+which vue
+yarn global add vue-cli
+vue init vuetifyjs/pwa about-ashton-pwa
+yarn add eslint-config-prettier --dev
+yarn
+eslint sr
+eslint src
+yarn
+yarn upgrade
+eslint
+eslint -c .eslintrc.js src
+yarn global add cordova ionic
+yaourt android
+mkdir about-goku
+cd about-goku
+vue init nuxt-community/typescript-template .
+ls
+code .
+yarn add bootstrap-vue
+sudo pacman -S inkscape --noconfirm
+yarn add --dev eslint-plugin-vue
+yaourt imagemagick
+yaourt -S image-magick-full --noconfirm
+yaourt -S imagemagick-full --noconfirm
+magick convert about-goku/static/favicon.png about-goku/static/favicon.ico
+yarn install
+yarn run dev
+yarn
+yarn run dev
+yarn run dev
+rm -rf ** .**
+vue init vuetifyjs/nuxt .
+yarn
+yarn add vuetify@1.0.4
+yarn add vue
+yarn
+yarn run dev
+yarn
+yarn run dev
+magik
+exit
+magik
+magick convert static/favicon.png -resize 16x16 -resize 32x32 static/favicon-32.png
+magick convert static/favicon.png -resize 16x16 -resize 16x16 static/favicon-16.png
+magick convert static/favicon-32.png static/favicon.ico
+magick convert static/favicon-16.png static/favicon-16.ico
+magick convert static/favicon-16.png static/icon.ico
+identify static/favicon.ico
+yarn
+yarn run deb
+yarn run dev
+yarn
+yarn run dev
+yarn add --dev eslint-config-prettier eslint-loader eslint-plugin-vue eslint-plugin-prettier prettier
+yarn
+yarn lint
+yarn lint
+yarn run lint
+yarn run lint
+ls ./node_modules/.bin/node
+yarn run lint
+yarn run lintfix
+yarn run lint
+ls ~
+mv ../logo.svg ./static
+mv static/* ../
+mv ../favi** ./static
+mv ../favi* ./static
+mv ../icon.ico ./static
+mv static ../
+rm -rf *
+rm -rf .nuxt
+rm -rf .eslintrc.js
+rm -rf .gitignore
+vue init vuetifyjs/nuxt .
+rm -rf static
+mv ../static ./
+yarn
+yarn run dev
+yarn run dev
+yarn run dev
+eslint -c .eslintrc.js --fix
+eslint -c .eslintrc.js
+eslint
+eslint -c .eslintrc.js --fix .
+yarn add eslint-plugin-vue@next
+yarn remove eslint-plugin-vue ; yarn add eslint-plugin-vue@next
+yarn add prettier-standard --de
+yarn add prettier-standard --dev
+yarn
+alsamixer
+startx
+quicklyupdate --all ; sc poweroff
+yaourt rmate
+yaourt google-cloud
+gcloud
+gcloud init
+exit
+ssh -R 52698:127.0.0.1:52698 hellwigashton@sstorage
+quicklyupdate --all
+startx
+alsamixer
+sc reboot
+git init
+yarn init
+git add package.json .vscode/settings.json
+git commit -m 'initial commit'
+git remote set origin https://github.com/quinnmanagement/BulkByNature.git
+git remote add origin https://github.com/quinnmanagement/BulkByNature.git
+git push -u origin master
+yarn add --dev babel-cli
+yarn start
+yarn start
+yarn add --dev babel-preset-env
+yarn start
+yarn start
+npm info eslint-config-airbnb@latest peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs yarn add --dev eslint-config-airbnb@latest\
+
+git add .gitignore
+git commit -m 'add gitignore'
+git push
+yarn add --dev eslint-plugin-compat
+yarn add --dev flow-bin babel-preset-flow babel-eslint eslint-plugin-flowtype\
+
+yarn
+yarn test
+yarn add --dev jest babel-jest
+yarn test
+yarn add express compression
+yarn add --dev nodemon
+yarn add --dev pm2
+yarn add --dev rimraf
+yarn add --dev cross-env
+yarn add babel-polyfill
+yarn add --dev webpack webpack-dev-server babel-core babel-loader
+yarn run start
+yarn add react react-dom
+yarn add --dev babel-preset-react babel-plugin-flow-react-proptypes
+yarn dev:wds
+yarn add --dev webpack-cli
+yarn dev:wds
+yarn dev:wds
+yarn start
+yarn dev:wds
+yarn add react-hot-loader@next
+yarn start
+yarn add redux redux-actions
+yarn add immutable@4.0.0-rc.2
+yarn add react-redux
+yarn test
+yarn test
+yarn test
+yarn add isomorphic-fetch
+yarn add redux-thunk
+yarn
+yarn add --dev redux-mock-store fetch-mock
+yarn test
+yarn
+yarn test
+yarn test
+yarn
+yarn test
+yarn test
+yarn test
+yarn add react-router react-router-dom\
+
+git add .* **
+git commit -m 'boilerplate config'
+git push
+git add .* **
+git commit -m 'added pages'
+git push
+yarn start
+yarn dev:wds
+alsamixer
+yarn dev:wds
+yarn add react-helmet
+yarn start
+killall node ; sudo killall node
+yarn start
+git add .* **
+git commit -m 'pre socket.io'
+git push
+exit
+quicklyupdate -a ; sc poweroff
+startx
+alsamixer
+alsamixer
+yarn add socket.io socket.io-client
+yarn start
+yarn dev:wds
+i3l
+i3l
+yarn add bootstrap@4.0.0-alpha.6\
+\
+
+yarn add jquery tether\
+\
+
+yarn add react-jss
+yarn start
+yarn dev:wds
+yarn lint
+yarn lint
+yarn lint
+git add .* **
+git commit -m 'template finished'
+git checkout -b template
+git push -u origin template
+git push -u template master
+git checkout -b master
+git checkout -B master
+git push
+git clone https://github.com/icebob/vue-express-mongo-boilerplate.git ../bulkbynature-vue
+yaourt -S google-chrome
+yaourt google-chrome
+yaourt -S google-chrome --noconfirm
+git config user.name "Ashton S. Hellwig"
+git config user.email "ashton@mrsgreensremedies.com"
+rm -rf .git
+git init
+git config user.name "Ashton S. Hellwig"
+git config user.email "ashton@mrsgreensremedies.com"
+git add .* **
+git commit -am 'initial commit'<><><>
+git add package.json
+git commit -am 'initial commit'
+git add origin https://github.com/quinnmanagement/bbn.git
+git remote add origin https://github.com/quinnmanagement/bbn.git
+git push -u origin master
+yarn
+git status
+git add *
+git status
+git commit -am 'security patch'
+git push
+yarn run build
+yarn run build
+yarn start
+mongo
+sc start mongodb.service
+yarn run start
+yarn run dev
+yarn run dev
+yarn run dev
+git show origin
+git show master
+git remote show origin
+redis
+redis-cli
+yarn run dev
+startx
+alsamixer
+quicklyupdate -a ; sc reboot
+mkdir bulkbynature
+cd bulkbynature
+vue init ergoutou520/vue-fullstack .
+vue init erguotou520/vue-fullstack .
+ls
+mkdir .vscode
+touch .vscode/settings.json
+vim .vscode/settings.json
+yarn
+vim package.json
+yarn
+vim package.json
+yarn
+vim package.json
+yarn run dev
+code .
+yarn
+yarn
+yarn run start
+scb mongodb.service
+yarn run start
+cd ..
+ls
+rm -rf **
+rm -rf **
+vue init erguotou520/vue-fullstack .
+cd -
+ls
+yarn global add generator-ng-fullstack
+yarn global add generator-ng-fullstack@next
+git clone https://github.com/dsheiko/boilerplate/tree/master/react-redux-typescript bbn
+git clone https://github.com/dsheiko/boilerplate.git
+mv ${PWD} 
+mv ${PWD} /home/ahellwig/bbn
+cd ..
+cd bbn
+ls
+rm -rf .git
+git init
+git add .* **
+git commit -m 'initial commit'
+yarn
+git status
+git add .* **
+git commit -m 'initial commit'
+git status
+git status
+yarn
+yarn run build
+rm -rf **
+rm -rf .git
+git clone -o react-starter-kit -b master --single-branch https://github.com/kriasoft/react-starter-kit.git .
+mkdir ../TEMP ; mv .vscode .gitignore ../EMP
+mkdir ../TEMP ; mv .vscode .gitignore ../EMP
+mv .* ../TEMP
+git clone -o react-starter-kit -b master --single-branch https://github.com/kriasoft/react-starter-kit.git .
+mv ../TEMP/.vscode/ .
+git status
+git add .* **
+git commit -m 'initial commit'
+rm -rf .git
+git add .* **
+git init ; git add ** .** ; git commit -m 'initial commit'
+yarn install
+yarn install
+yarn start
+mv .vscode ../TEMP
+rm -rf *
+ls
+rm -rf .*
+yarn global add mern-cli
+exit
+mern init .
+cd ..
+rm -rf bbn ; mern init bbn
+mv ./TEMP/.vscode/ ./bbn
+exit
+scb mongodb.service
+merng
+yarn test
+yarn
+yarn test
+yarn
+yarn start
+yarn start
+yarn start
+vue init erguotou520/vue-fullstack .
+yarn
+yarn
+yarn dev
+yarn dev
+yarn dev
+yarn
+yarn run dev
+git clone https://github.com/icebob/vue-express-mongo-boilerplate vue-bulk-by-nature
+cd vue-bulk-by-nature
+code .
+yarn
+yarn
+mongo
+yarn run dev
+yarn run dev
+mongo
+trash-restore
+yarn run dev
+yarn run dev
+yarn run dev
+yarn
+yarn
+yarn run dev
+yarn run dev
+yarn run dev
+git init ; git add ** .** ; git commit -m 'initial commit'
+alsamixer
+startx
+quicklyupdate -a ; sc poweroff
+startx
+startx
+sudo pacman -Syyyyu --noconfirm ; yaourt -Syua --noconfirm
+reboot
+sc --failed
+sc --failed --all
+sc status
+sc disable redis.service
+sc stop redis.service
+sc status autovt@.service
+sc status getty@.service
+sc status getty.target 
+yaourt -Syua
+sc reboot
+pacman -Qi linux
+uname -a
+sudo pacman -Syyyyu linux --force --noconfirm
+sudo mkinitcpio -P
+sudo pacman -Qi linux
+uname -a
+reboot
+xrandr --auto
+sudo pkill -HUP xscreensaver
+pkill -HUP xscreensaver
+htop
+vim ~/.xinitrc
+xscreensaver --help
+vim ~/.xinitrc
+cd Documents/Work
+ls
+mkdir blockchain
+cd blockchain
+git clone https://gitlab.com/421Hemp/cannex-angular-dapp.git
+sudo killall conky
+git clone https://gitlab.com/421Hemp/cannex-angular.git cannex
+date -I
+ssh-keygen -C "ashton@cannexchange-$(date -I)"
+echo "$(cat ~/.ssh/id_rsa.pub)" | xclip -i
+git clone https://gitlab.com/421Hemp/cannex-angular.git cannex
+git clone git@gitlab.com:421hemp/cannex-angular.git cannex
+cd cannex
+ls
+git remote show origin
+code .
+htop
+yarn
+sudo nvidia-xconfig
+startx
+quicklyupdate -a ; sc poweroff
+onedrive &
+sudo pkill -HUP onedrive
+onedrive
+onedrive
+yaourt -Syua
+onedrive -h
+onedrive -m
+sudo exit
+exit
+cd Documents
+ls
+cd School
+ls
+cd CSC160
+ls
+mkdir homework
+cd homework
+mkdir Module-4
+cd Module-4
+git clone https://github.com/ashellwig/CSC160HomeworkTemplate chapter-7
+cd chapter-7
+ls
+rm -rf ch5hw_ahellwig.synctex.gz
+rm -rf ch5hw_ahellwig.pdf
+ls
+rm -rf .git
+git init
+mv ch5hw_ahellwig.tex ch7hw_ahellwig.tex
+code .
+cd _Scratch
+make
+which clang-format
+git clone https://github.com/ashellwig/CSC160MakeTemplate.git ~/Documents/School/CSC160/chapter-8
+cd ~/Documents/School/CSC160/chapter-8
+rm -rf .git
+git init
+code .
+rm -rf .git
+git init
+git init ; git add ** .** ; git commit -m 'initial commit'
+mkdir -p ./obj/{debug,release}
+mkdir -p ./target/{debug,release}
+git add .* **
+git commit -m 'add needed dirs'
+make
+clang-format -style llbm
+clang-format -style llvm
+make
+make debug
+make run-debug
+git status
+git add *
+git add .*
+git commit -m 'hasily done because my girlfrind wants me to go to bed"
+git commit -m 'hasily done because my girlfrind wants me to go to bed
+git commit -m 'hasily done because my girlfrind wants me to go to bed'
+exit
+startx
+quicklyupdate -a ; sc poweroff
+git status
+yarn ; ganache-cli
+yarn global add truffle ganache-cli
+cd Documents/Work/
+yaourt slack
+mv Downloads/aws-cannex.pem .ssh
+cd .ssh
+ls
+cat known_hosts
+cd ..
+chmod 400 ./.ssh/aws-cannex.pem
+lsa .ssh
+ssh -i "./.ssh/aws-cannex.pem" ec2-18-217-71-157.us-east-2.compute.amazonaws.com\
+
+i3l
+i3l
+sc status mongodb.service
+ssh -i ./.ssh/aws-cannex.pem ec2-18-217-71-157.us-east-2.compute.amazonaws.com\
+
+cd .ssh
+ls
+touch config
+vim config
+vim config
+ssh -i ./.ssh/aws-cannex.pem ec2-18-217-71-157.us-east-2.compute.amazonaws.com\
+
+vim config
+ssh -i ./.ssh/aws-cannex.pem ec2-18-217-71-157.us-east-2.compute.amazonaws.com\
+
+ping 8.8.8.8
+ssh -i aws-cannex.pem ec2-18-217-71-157.us-east-2.compute.amazonaws.com
+ssh -i ./aws-cannex.pem ec2-18-219-198-192.us-east-2.compute.amazonaws.com
+vim config
+ssh -i ./aws-cannex.pem ec2-18-219-198-192.us-east-2.compute.amazonaws.com
+ssh -i ./aws-cannex.pem 18.219.198.192
+ssh -i ./aws-cannex.pem 18.219.198.192
+ssh -i ./aws-cannex.pem 18.219.198.192:22
+ssh -i ./aws-cannex.pem 18.219.198.192
+ssh -i ./aws-cannex.pem aws-user@18.219.198.192
+ssh -i ./aws-cannex.pem ec2-18-219-198-192.us-east-2.compute.amazonaws.com\
+
+rm -rf aws-cannex.pem
+vim config
+yarn global upgrade && npm -g upgrade
+yarn global add @vue/cli
+cd Documents/Work/
+mkdir cannex-vue
+cd cannex-vue
+vue create .
+cd ..
+rm -rf cannex-vue
+which vue
+vue -V
+npm install -g @vue/cli
+mkdir cannex-vue
+cd cannex-vue
+vue create cannex-vue
+vue create cannex-vue
+vue create cannex-vue
+cd cannex-vue
+code .
+yarn
+yarn run serve
+yarn add vuetify
+yarn run serve
+yarn add --dev vue-extend-layout
+yarn
+npm run serve
+ls
+yarn add --dev vue-cli-plugin-vuetify
+vue invoke vuetify
+vue init vuetifyjs/webpack ./testcue
+vue create vuetifyjs/webpack ./testcue
+yarn run serve
+exit
+alias
+sudo alias | grep -e 'git'
+(alias | wc -l) | grep -e 'git'
+man xorg.conf.d
+cat ~/.config/i3/config | grep work
+quicklyupdate -h
+quicklyupdate -z -s
+sudo pacman -Syyyyu ; yaourt -Syua
+ls
+cd ..
+cd -
+git status
+cd ..
+yadm status
+yadm checkout -- .xscreensaver
+git diff .xinitrc
+git diff-files
+yadm diff .xinitrc
+yaourt lightdm-webkit-aether
+yaourt light-dm-webkit-aether
+yaourt lightdm-webkit-theme-aether
+yaourt -S lightdm-webkit-theme-aether --noconfirm
+cp /home/ahellwig/Pictures/Me/ .face
+cp /home/ahellwig/Pictures/Me/ProfilePic.JPG .face
+                                                                                            

@@ -8,6 +8,9 @@
 # i3
 alias i3r='i3-msg move workspace to output right'
 alias i3l='i3-msg move workspace to output left'
+# Tmux
+alias cppenvplease="tmuxp load ${HOME}/CPP/ENV/cpp-tmux.yaml"
+
 
 # --- System Management ---
 # Zsh
