@@ -30,11 +30,19 @@ path=(
 	/sbin
 	/usr/{bin,sbin}
 	/usr/local/{bin,sbin}
+	~/.local/bin
 	~/.cargo/bin     # Rust
 	~/racket/bin     # Racket
 	~/go/bin         # Go
-	~/.local/bin
 	~/anaconda3/bin  # Python
 	~/.yarn/bin      # Node.js
+	# Apache Spark
+	/opt/apache-spark/bin
+	# WebAssembly
+	~/emsdk
+	~/emsdk/clang/e1.38.10_64bit
+	~/emsdk/node/8.9.1_64bit/bin
+	~/emsdk/emscripten/1.38.10
+
 )
 
