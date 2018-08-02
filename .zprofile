@@ -39,10 +39,10 @@ path=(
 	# Apache Spark
 	/opt/apache-spark/bin
 	# WebAssembly
-	~/emsdk
-	~/emsdk/clang/e1.38.10_64bit
-	~/emsdk/node/8.9.1_64bit/bin
-	~/emsdk/emscripten/1.38.10
+	# ~/emsdk
+	# ~/emsdk/clang/e1.38.10_64bit
+	# ~/emsdk/node/8.9.1_64bit/bin
+	# ~/emsdk/emscripten/1.38.10
 
 )
 

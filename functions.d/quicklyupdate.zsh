@@ -61,7 +61,7 @@ quicklyupdate() {
 -s                     --system                   update system (pacman and yaourt)
 -z                     --zsh                      update zsh functions
 -v                     --vim                      update vim plugins
--r                     --rust                     update parity (and rust)
+-r                     --rust                     update rust
 -a                     --all                      update all
 END
 )"
@@ -95,12 +95,11 @@ END
     printf "\n\033[32mUpdated Vim.\033[0m\n"
   fi
 
-# --- Parity ---
+# --- Rust ---
   if [[ "$up_rust" = true ]]; then
     printf "\n\033[1;32m===> Updating Rust...\033[0m\n"
     cd "${HOME}"
     rustup 'update' ;
-    rustup 'update' '--toolchain=nightly' ;
     printf "\n\033[32mUpdated Rust.\033[0m\n"
   fi
 }

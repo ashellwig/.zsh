@@ -5,13 +5,13 @@
 
 # --- WebAssembly ---
 # EMSDK
-export EMSDK="${HOME}/emsdk"
-export EM_CONFIG="${HOME}/.emscripten"
-export LLVM_ROOT="${HOME}/emsdk/clang/e1.38.10_64bit"
-export EMSCRIPTEN_NATIVE_OPTIMIZER="${HOME}/emsdk/clang/e1.38.10_64bit/optimizer"
-export BINARYEN_ROOT="${HOME}/emsdk/clang/e1.38.10_64bit/binaryen"
-export EMSDK_NODE="${HOME}/emsdk/node/8.9.1_64bit/bin/node"
-export EMSCRIPTEN="${HOME}/emsdk/emscripten/1.38.10"
+# export EMSDK="${HOME}/emsdk"
+# export EM_CONFIG="${HOME}/.emscripten"
+# export LLVM_ROOT="${HOME}/emsdk/clang/e1.38.10_64bit"
+# export EMSCRIPTEN_NATIVE_OPTIMIZER="${HOME}/emsdk/clang/e1.38.10_64bit/optimizer"
+# export BINARYEN_ROOT="${HOME}/emsdk/clang/e1.38.10_64bit/binaryen"
+# export EMSDK_NODE="${HOME}/emsdk/node/8.9.1_64bit/bin/node"
+# export EMSCRIPTEN="${HOME}/emsdk/emscripten/1.38.10"
 
 
 # --- C/C++ ---
