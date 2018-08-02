@@ -71,7 +71,7 @@ END
   if [[ "$up_sys" = true ]]; then
     printf "\n\033[1;33m===> Updating SYSTEM...\033[0m\n\n"
     sudo pacman '-Syyyyu' '--noconfirm'
-    sudo yaourt '-Syua' '--noconfirm'
+    yaourt '-Syua' '--noconfirm'
     printf "\n\033[1;32m===> Removing Orphaned Packages \033[0m\n"
     sudo pacman '-Rns' "$(pacman -Qtdq)"
     printf "\n\033[1;32m===> Packages Upgraded: \033[0m\n"
