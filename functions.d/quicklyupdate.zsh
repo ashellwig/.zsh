@@ -14,6 +14,8 @@ quicklyupdate() {
   local up_vim=false
   # Parity
   local up_rust=false
+  # NPM/Yarn
+  local up_npm=false
 
   # Parse Options
   case "${key}" in
@@ -38,6 +40,11 @@ quicklyupdate() {
       local up_zsh=true
       local up_vim=true
       local up_rust=true
+      local up_npm=true
+      shift
+      ;;
+    -n|--npm)
+      local up_npm=true
       shift
       ;;
     -h|--help)
@@ -57,12 +64,13 @@ quicklyupdate() {
 \033[1mMaintained By:\033[0m \033[2;32mAshton Hellwig\033[0m \033[4m<ashtonscotthellwig@gmail.com>\033[0m
 \033[1mShort Option    Long Option                Use\033[0m
 \033[1m------------------------------------------------------------\033[0m
--h                     --help                     Show help and exit
--s                     --system                   update system (pacman and yaourt)
--z                     --zsh                      update zsh functions
--v                     --vim                      update vim plugins
--r                     --rust                     update rust
 -a                     --all                      update all
+-h                     --help                     Show help and exit
+-n                     --node                     Update npm/yarn
+-r                     --rust                     update rust
+-s                     --system                   update system (pacman and yaourt)
+-v                     --vim                      update vim plugins
+-z                     --zsh                      update zsh functions
 END
 )"
   fi
@@ -84,6 +92,12 @@ END
     printf "\n\033[1;33m===> Updating ZSH...\033[0m\n"
     cd "${ZDOTDIR}"
     git submodule update --init --recursive
+    for d in ./functions/*; do
+      cd $d
+      git pull
+      cd ..
+    done
+    cd ${HOME}
     printf "\n\033[32mUpdated Zsh.\033[0m\n"
   fi
 
@@ -101,6 +115,14 @@ END
     cd "${HOME}"
     rustup 'update' ;
     printf "\n\033[32mUpdated Rust.\033[0m\n"
+  fi
+
+# --- NPM ---
+  if [[ "$up_npm = true" ]]; then
+    printf "\n\033[1;33m===> Updateing NPM/Yarn\033[0m\n"
+    npm '-g' 'upgrade'
+    yarn 'global' 'upgrade'
+    printf "\n\033[32mUpdated NPM.\033[0m\n"
   fi
 }
 

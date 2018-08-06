@@ -16,3 +16,6 @@
 [submodule "functions/base16-shell"]
 	path = functions/base16-shell
 	url = https://github.com/chriskempson/base16-shell.git
+[submodule "functions/conda_zsh_completion"]
+	path = functions/conda_zsh_completion
+	url = https://github.com/esc/conda-zsh-completion.git
