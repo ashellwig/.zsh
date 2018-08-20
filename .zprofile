@@ -14,7 +14,7 @@ source "${ZDOTDIR}/settings/xdg-user-dirs-settings.zsh"
 export ZSH_CONFIG_DIRS="$HOME/.zsh"
 export ZDOTDIR="${HOME}/.zsh"
 # Browser
-export BROWSER='/bin/chromium'
+export BROWSER='/bin/google-chrome-unstable'
 # Editor
 export EDITOR='vim'
 export VISUAL='vim'
@@ -31,18 +31,11 @@ path=(
 	/usr/{bin,sbin}
 	/usr/local/{bin,sbin}
 	~/.local/bin
-	~/.cargo/bin     # Rust
-	~/racket/bin     # Racket
-	~/go/bin         # Go
-	~/anaconda3/bin  # Python
-	~/.yarn/bin      # Node.js
-	# Apache Spark
-	/opt/apache-spark/bin
-	# WebAssembly
-	# ~/emsdk
-	# ~/emsdk/clang/e1.38.10_64bit
-	# ~/emsdk/node/8.9.1_64bit/bin
-	# ~/emsdk/emscripten/1.38.10
-
+	~/.cargo/bin        # Rust
+#	~/racket/bin        # Racket
+	~/go/bin            # Go
+	~/anaconda3/bin     # Python
+	~/.yarn/bin         # Node.js
+	~/SDKs/flutter/bin  # Flutter
 )
 

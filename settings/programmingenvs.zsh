@@ -5,19 +5,13 @@
 
 # --- WebAssembly ---
 # EMSDK
-# export EMSDK="${HOME}/emsdk"
-# export EM_CONFIG="${HOME}/.emscripten"
-# export LLVM_ROOT="${HOME}/emsdk/clang/e1.38.10_64bit"
-# export EMSCRIPTEN_NATIVE_OPTIMIZER="${HOME}/emsdk/clang/e1.38.10_64bit/optimizer"
-# export BINARYEN_ROOT="${HOME}/emsdk/clang/e1.38.10_64bit/binaryen"
-# export EMSDK_NODE="${HOME}/emsdk/node/8.9.1_64bit/bin/node"
-# export EMSCRIPTEN="${HOME}/emsdk/emscripten/1.38.10"
-
+# Source the EMSDK Environment
+alias emsenv="source ${HOME}/SDKs/emsdk/emsdk_env.sh --release"
 
 # --- C/C++ ---
 # Compiler Option
-export CC=gcc
-export CXX=g++
+#export CC=gcc
+#export CXX=g++
 
 
 # --- Go ---
@@ -27,21 +21,17 @@ export GOPATH="$HOME/go"
 
 # --- Node ---
 # NVM
-source /usr/share/nvm/init-nvm.sh
-[ -z "$NVM_DIR" ] && export NVM_DIR="$HOME/.nvm"
-source /usr/share/nvm/nvm.sh
-source /usr/share/nvm/bash_completion
-source /usr/share/nvm/install-nvm-exec
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 # --- Ruby ---
 # RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
-# vim: set et ts=2 sw=2 ft=zsh:
-
 
 # --- Python ---
-# Pip Command Completion
+# pip zsh completion
 function _pip_completion {
   local words cword
   read -Ac words
@@ -51,18 +41,10 @@ function _pip_completion {
              PIP_AUTO_COMPLETE=1 $words[1] ) )
 }
 compctl -K _pip_completion pip
-# pip zsh completion end
 
 
-# pip zsh completion start
-function _pip_completion {
-  local words cword
-  read -Ac words
-  read -cn cword
-  reply=( $( COMP_WORDS="$words[*]" \
-             COMP_CWORD=$(( cword-1 )) \
-             PIP_AUTO_COMPLETE=1 $words[1] ) )
-}
-compctl -K _pip_completion pip
-# pip zsh completion end
+# --- Android ---
+ANDROID_SDK_ROOT="/home/ahellwig/Android/Sdk"
+
+# vim: set et ts=2 sw=2 ft=zsh:
 
