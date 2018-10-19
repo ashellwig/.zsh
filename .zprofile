@@ -6,7 +6,6 @@
 #    login shells                                 ##
 ####################################################
 
-
 # --- Variables ---
 # XDG Base Directories
 source "${ZDOTDIR}/settings/xdg-user-dirs-settings.zsh"
@@ -26,16 +25,20 @@ export PAGER='less'
 typeset -U path
 source /etc/profile
 path=(
+	"${PATH}"
 	/bin
 	/sbin
 	/usr/{bin,sbin}
 	/usr/local/{bin,sbin}
 	~/.local/bin
+	~/.local/bin/TEE-CLC-14.114.0/
+	~/.cabal/bin        # Haskell
 	~/.cargo/bin        # Rust
 #	~/racket/bin        # Racket
 	~/go/bin            # Go
 	~/anaconda3/bin     # Python
 	~/.yarn/bin         # Node.js
 	~/SDKs/flutter/bin  # Flutter
+	~/.dotnet/tools     # .NET
 )
 

@@ -33,8 +33,8 @@ alias pas='pa -Ss'
 alias pai='pa -S'
 alias blackarch-categories='sudo pacman -Sg | grep blackarch'
 # ls
-alias ls='ls -Af --color=always'
-alias lsa='ls -lFAh --color=always'
+alias ls='ls -Af --color=always --group-directories-first'
+alias lsa='ls -lFAh --color=always --group-directories-first'
 # Parity
 if [[ -d $HOME/parity/target/release ]]; then
   alias start-parity='parity --mode=active --min-peers=25 --max-peers=99'
