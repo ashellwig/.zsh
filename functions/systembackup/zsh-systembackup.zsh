@@ -25,7 +25,9 @@ function pre_run_func() {
 /home/ahellwig/.vscode/***
 /home/ahellwig/.cargo/***
 /home/ahellwig/.rustup/***
-/home/ahellwig/.cargo/***
+/home/ahellwig/.nvm/***
+/home/ahellwig/.stack/***
+node_modules
 /home/ahellwig/.g*/***
 /dev/*
 /proc/*
