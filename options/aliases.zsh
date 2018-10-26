@@ -33,8 +33,8 @@ alias pas='pa -Ss'
 alias pai='pa -S'
 alias blackarch-categories='sudo pacman -Sg | grep blackarch'
 # ls
-alias lsa='ls -Af --color=always --group-directories-first'
-alias lsaf='ls -lFAh --color=always --group-directories-first'
+alias ls='ls -FA --group-directories-first --color=always'
+alias lsa='ls -lFAh --group-directories-first --color=always'
 # cat
 alias colorcat='CONDA_PREFIX=/home/ahellwig/anaconda3 pygmentize -g -O style=colorful,linenos=1'
 # Parity
