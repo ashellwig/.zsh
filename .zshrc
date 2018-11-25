@@ -52,6 +52,4 @@ fi
 # Programming
 . ${ZDOTDIR}/settings/programmingenvs.zsh
 
-
-
 # vim: set et ts=2 sw=2:
