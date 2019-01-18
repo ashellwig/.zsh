@@ -27,11 +27,9 @@ if [[ -d ${ZDOTDIR}/functions.d ]]; then
 fi
 # Plugins
 if [[ -d ${ZDOTDIR}/plugins ]]; then
-  if [[ -e * ]]; then
     for file in ${ZDOTDIR}/plugins/*/*.plugin.zsh; do
       . "$file"
     done
-  fi
 fi
 
 # --- Options / Settings ---

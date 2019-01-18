@@ -19,3 +19,6 @@
 [submodule "functions/conda_zsh_completion"]
 	path = functions/conda_zsh_completion
 	url = https://github.com/esc/conda-zsh-completion.git
+[submodule "plugins/zsh-nvm"]
+	path = plugins/zsh-nvm
+	url = https://github.com/lukechilds/zsh-nvm.git
