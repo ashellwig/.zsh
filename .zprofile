@@ -9,11 +9,13 @@
 # --- Variables ---
 # XDG Base Directories
 source "${ZDOTDIR}/settings/xdg-user-dirs-settings.zsh"
+# Programming
+source ${ZDOTDIR}/settings/programmingenvs.zsh
 # Shell
 export ZSH_CONFIG_DIRS="$HOME/.zsh"
 export ZDOTDIR="${HOME}/.zsh"
 # Browser
-export BROWSER='/bin/google-chrome-unstable'
+export BROWSER='/bin/google-chrome-stable'
 # Editor
 export EDITOR='vim'
 export VISUAL='vim'

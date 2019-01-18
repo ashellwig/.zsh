@@ -49,7 +49,6 @@ fi
 . ${ZDOTDIR}/settings/keybindings.zsh
 # Autosuggestions
 . ${ZDOTDIR}/functions/zsh-autosuggestions/zsh-autosuggestions.zsh
-# Programming
-. ${ZDOTDIR}/settings/programmingenvs.zsh
+
 
 # vim: set et ts=2 sw=2:

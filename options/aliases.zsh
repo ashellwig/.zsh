@@ -29,7 +29,5 @@ alias blackarch-categories='sudo pacman -Sg | grep blackarch'
 # ls
 alias -g ls='ls -FA --group-directories-first --color=always'
 alias lsa='ls -lh'
-# cat
-alias colorcat='CONDA_PREFIX=/home/ahellwig/anaconda3 pygmentize -g -O style=colorful,linenos=1'
 
 # vim: set et ft=zsh sw=2 ts=2:

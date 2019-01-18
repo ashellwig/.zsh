@@ -19,17 +19,6 @@ alias emsenv="source ${HOME}/SDKs/emsdk/emsdk_env.sh --release"
 export GOPATH="$HOME/go"
 
 
-# --- Node ---
-# NVM
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-
-# --- Ruby ---
-# RVM
-#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
-
 # --- Python ---
 # pip zsh completion
 function _pip_completion {
@@ -45,6 +34,11 @@ compctl -K _pip_completion pip
 
 # --- Android ---
 ANDROID_SDK_ROOT="/home/ahellwig/Android/Sdk"
+
+
+# --- Ruby ---
+# RVM
+#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # vim: set et ts=2 sw=2 ft=zsh:
 
