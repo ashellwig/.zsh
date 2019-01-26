@@ -25,6 +25,17 @@ alias emsenv="source ${HOME}/SDKs/emsdk/emsdk_env.sh --release"
 # GOPATH
 export GOPATH="$HOME/go"
 
+
+# --- LaTeX ---
+export TEXDIR='/usr/local/texlive/2018'
+export TEXMFLOCAL='/usr/local/texlive/texmf-local'
+export TEXMFSYSVAR='/usr/local/texlive/2018/texmf-var'
+export TEXMFSYSCONFIG='/usr/local/texlive/2018/texmf-config'
+export TEXMFVAR="$HOME/.texlive2018/texmf-var"
+export TEXMFCONFIG="$HOME/.texlive2018/texmf-config"
+export TEXMFHOME="$HOME/texmf"
+
+
 # --- Python ---
 # Conda
 source /home/ahellwig/anaconda3/etc/profile.d/conda.sh
