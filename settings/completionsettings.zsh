@@ -4,7 +4,6 @@
 
 # --- Functions ---
 autoload ${ZDOTDIR}/functions/zsh-completions/src
-autoload ${ZDOTDIR}/functions/conda_zsh_completion
 autoload compinit && compinit
 
 # --- Style ---

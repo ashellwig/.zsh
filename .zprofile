@@ -22,25 +22,25 @@ export VISUAL='vim'
 export VI='vim'
 export PAGER='less'
 
+# System-wide profile
+source /etc/profile
+
 # --- Path ---
 # Programs
 typeset -U path
-source /etc/profile
 path=(
-	"${PATH}"
-	/bin
-	/sbin
-	/usr/{bin,sbin}
-	/usr/local/{bin,sbin}
-	~/.local/bin
-	~/.local/bin/TEE-CLC-14.114.0/
-	~/.cabal/bin        # Haskell
-	~/.cargo/bin        # Rust
-#	~/racket/bin        # Racket
-	~/go/bin            # Go
-	~/anaconda3/bin     # Python
-	~/.yarn/bin         # Node.js
-	~/SDKs/flutter/bin  # Flutter
-	~/.dotnet/tools     # .NET
+    "${PATH}"
+    /bin
+    /sbin
+    /usr/{bin,sbin}
+    /usr/local/{bin,sbin}
+    ~/.local/bin
+    ~/perl5/bin         # Perl 5
+    ~/.cargo/bin        # Rust
+    ~/go/bin            # Go
+    ~/anaconda3/bin     # Python
+    ~/.yarn/bin         # Node.js
+    ~/SDKs/flutter/bin  # Flutter
+    # ~/.dotnet/tools   # .NET
 )
 

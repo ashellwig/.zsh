@@ -12,7 +12,6 @@ typeset -U fpath
 fpath=(
   $fpath
   ${ZDOTDIR}/functions/zsh-completions/src
-  ${ZDOTDIR}/functions/conda_zsh_completions
   )
 for func in $^fpath/*(N-.x:t); autoload $func
 
