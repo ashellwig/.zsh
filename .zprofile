@@ -35,7 +35,7 @@ path=(
     /usr/{bin,sbin}
     /usr/local/{bin,sbin}
     ~/.local/bin
-    ~/perl5/bin         # Perl 5
+    ~/perl5/bin         # Perl5
     ~/.cargo/bin        # Rust
     ~/go/bin            # Go
     ~/anaconda3/bin     # Python

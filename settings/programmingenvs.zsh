@@ -28,11 +28,11 @@ export GOPATH="$HOME/go"
 
 # --- LaTeX ---
 export TEXDIR='/usr/local/texlive/2018'
-export TEXMFLOCAL='/usr/local/texlive/texmf-local'
-export TEXMFSYSVAR='/usr/local/texlive/2018/texmf-var'
-export TEXMFSYSCONFIG='/usr/local/texlive/2018/texmf-config'
-export TEXMFVAR="$HOME/.texlive2018/texmf-var"
-export TEXMFCONFIG="$HOME/.texlive2018/texmf-config"
+export TEXMFLOCAL='/usr/local/share/texmf:/usr/share/texmf'
+export TEXMFSYSVAR='/var/lib/texmf'
+export TEXMFSYSCONFIG='/etc/texmf'
+export TEXMFVAR="$HOME/.texlive/texmf-var"
+export TEXMFCONFIG="$HOME/.texlive/texmf-config"
 export TEXMFHOME="$HOME/texmf"
 
 
