@@ -27,7 +27,7 @@ alias kernellogs="dmesg --human --color=always --follow | most"
 # Pacman
 alias blackarch-categories='sudo pacman -Sg | grep blackarch'
 # ls
-alias -g ls='ls -FA --group-directories-first --color=always'
-alias lsa='ls -lh'
+alias ls='ls -FA --group-directories-first --color=always'
+alias lsa='ls -FAhl --group-directories-first --color=always'
 
 # vim: set et ft=zsh sw=2 ts=2:

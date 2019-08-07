@@ -3,7 +3,7 @@
 
 set-git-config() {
   zparseopts -D -E -- a+:=account -account+:=account
-  
+
   typeset local_account
   typeset local_account=(
     'git'
@@ -34,9 +34,12 @@ set-git-config() {
     'ashton@somnicbn.com'
   )
 
-  if [[ $account == "personal" ]]; then
-    eval "${local_account[@]}"
-  else
+  if [[ $account == "work" ]]; then
     eval "${work_account[@]}"
+  else
+    eval "${local_account[@]}"
   fi
 }
+
+# vim: set et ts=2 sw=2 ft=zsh:
+

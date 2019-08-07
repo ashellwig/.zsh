@@ -11,15 +11,24 @@ export PERL_LOCAL_LIB_ROOT="/home/ahellwig/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_L
 export PERL_MB_OPT="--install_base \"/home/ahellwig/perl5\""
 export PERL_MM_OPT="INSTALL_BASE=/home/ahellwig/perl5"
 
+
 # --- WebAssembly ---
 # EMSDK
 # Source the EMSDK Environment
 alias emsenv="source ${HOME}/SDKs/emsdk/emsdk_env.sh --release"
 
+
 # --- C/C++ ---
 # Compiler Option
-#export CC=gcc
-#export CXX=g++
+#export CC=clang
+#export CXX=clang++
+# Linking
+## CUDA
+# export CUDA_PATH='/opt/cuda'
+## Bioinformatics
+export NCBI_VDB_LIBDIR=/usr/local/ncbi/ncbi-vdb/lib64
+export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${NCBI_VDB_LIBDIR}"
+
 
 # --- Go ---
 # GOPATH
@@ -74,6 +83,13 @@ ANDROID_HOME="/home/ahellwig/SDKs/Android/Sdk"
 
 # --- Ruby ---
 # RVM
-#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+# We have to source it last, so we will just use a variablet to configure
+# whether or not to run its init script at the end of ../.zshrc
+#export INIT_RVM_USER=false
+
+
+# --- Windows Development ---
+export WINE_PREFIX="~/.wine"
+
 
 # vim: set et ts=2 sw=2 ft=zsh:

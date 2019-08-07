@@ -14,6 +14,8 @@ source ${ZDOTDIR}/settings/programmingenvs.zsh
 # Shell
 export ZSH_CONFIG_DIRS="$HOME/.zsh"
 export ZDOTDIR="${HOME}/.zsh"
+export TERM=xterm-termite
+export TERMINFO=/usr/lib/terminfo
 # Browser
 export BROWSER='/bin/google-chrome-stable'
 # Editor
@@ -34,13 +36,17 @@ path=(
     /sbin
     /usr/{bin,sbin}
     /usr/local/{bin,sbin}
-    ~/.local/bin
-    ~/perl5/bin         # Perl5
-    ~/.cargo/bin        # Rust
-    ~/go/bin            # Go
-    ~/anaconda3/bin     # Python
-    ~/.yarn/bin         # Node.js
-    ~/SDKs/flutter/bin  # Flutter
+    ~/.local/bin                    # Locally installed binaries
+    ~/perl5/bin                     # Perl5
+    ~/.cargo/bin                    # Rust
+    ~/go/bin                        # Go
+    ~/.yarn/bin                     # Node.js
+    ~/SDKs/flutter/bin              # Flutter
+    ~/anaconda3/bin     	    # Python
+    ~/.aspera/connect/bin           # aspera
+    # /opt/cuda/bin                   # Cuda
+    # /opt/cuda/NsightCompute-2019.1  # Cuda
     # ~/.dotnet/tools   # .NET
+    # "$(ruby -e 'puts Gem.user_dir')/bin"  # RubyGems
 )
 

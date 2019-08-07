@@ -47,5 +47,4 @@ fi
 # Autosuggestions
 . ${ZDOTDIR}/functions/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-
 # vim: set et ts=2 sw=2:
