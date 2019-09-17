@@ -6,16 +6,16 @@
 # --- Perl ---
 # CPAN
 ## Environment Variables
-export PERL5LIB="/home/ahellwig/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"
-export PERL_LOCAL_LIB_ROOT="/home/ahellwig/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"
-export PERL_MB_OPT="--install_base \"/home/ahellwig/perl5\""
-export PERL_MM_OPT="INSTALL_BASE=/home/ahellwig/perl5"
+# export PERL5LIB="/home/ahellwig/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"
+# export PERL_LOCAL_LIB_ROOT="/home/ahellwig/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"
+# export PERL_MB_OPT="--install_base \"/home/ahellwig/perl5\""
+# export PERL_MM_OPT="INSTALL_BASE=/home/ahellwig/perl5"
 
 
 # --- WebAssembly ---
 # EMSDK
 # Source the EMSDK Environment
-alias emsenv="source ${HOME}/SDKs/emsdk/emsdk_env.sh --release"
+# alias emsenv="source ${HOME}/SDKs/emsdk/emsdk_env.sh --release"
 
 
 # --- C/C++ ---
@@ -25,9 +25,11 @@ alias emsenv="source ${HOME}/SDKs/emsdk/emsdk_env.sh --release"
 # Linking
 ## CUDA
 # export CUDA_PATH='/opt/cuda'
+# export PATH="$CUDA_PATH/bin{$PATH:+${PATH}}"
+# export LD_LIBRARY_PATH="$CUDA_PATH/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
 ## Bioinformatics
-export NCBI_VDB_LIBDIR=/usr/local/ncbi/ncbi-vdb/lib64
-export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${NCBI_VDB_LIBDIR}"
+#export NCBI_VDB_LIBDIR=/usr/local/ncbi/ncbi-vdb/lib64
+#export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${NCBI_VDB_LIBDIR}"
 
 
 # --- Go ---
@@ -36,13 +38,13 @@ export GOPATH="$HOME/go"
 
 
 # --- LaTeX ---
-export TEXDIR='/usr/local/texlive/2018'
-export TEXMFLOCAL='/usr/local/share/texmf:/usr/share/texmf'
-export TEXMFSYSVAR='/var/lib/texmf'
-export TEXMFSYSCONFIG='/etc/texmf'
-export TEXMFVAR="$HOME/.texlive/texmf-var"
-export TEXMFCONFIG="$HOME/.texlive/texmf-config"
-export TEXMFHOME="$HOME/texmf"
+# export TEXDIR='/usr/local/texlive/2018'
+# export TEXMFLOCAL='/usr/local/share/texmf:/usr/share/texmf'
+# export TEXMFSYSVAR='/var/lib/texmf'
+# export TEXMFSYSCONFIG='/etc/texmf'
+# export TEXMFVAR="${HOME}/.texlive/texmf-var"
+# export TEXMFCONFIG="${HOME}/.texlive/texmf-config"
+# export TEXMFHOME="${HOME}/texmf"
 
 
 # --- Python ---
@@ -89,7 +91,5 @@ ANDROID_HOME="/home/ahellwig/SDKs/Android/Sdk"
 
 
 # --- Windows Development ---
-export WINE_PREFIX="~/.wine"
-
 
 # vim: set et ts=2 sw=2 ft=zsh:

@@ -36,17 +36,10 @@ path=(
     /sbin
     /usr/{bin,sbin}
     /usr/local/{bin,sbin}
-    ~/.local/bin                    # Locally installed binaries
-    ~/perl5/bin                     # Perl5
-    ~/.cargo/bin                    # Rust
-    ~/go/bin                        # Go
-    ~/.yarn/bin                     # Node.js
-    ~/SDKs/flutter/bin              # Flutter
-    ~/anaconda3/bin     	    # Python
-    ~/.aspera/connect/bin           # aspera
-    # /opt/cuda/bin                   # Cuda
-    # /opt/cuda/NsightCompute-2019.1  # Cuda
-    # ~/.dotnet/tools   # .NET
-    # "$(ruby -e 'puts Gem.user_dir')/bin"  # RubyGems
+    ~/.local/bin                            # Locally installed binaries
+    ~/.cargo/bin                            # Rust
+    ~/go/bin                                # Go
+    ~/.yarn/bin                             # Node.js
+    ~/anaconda3/bin                         # Python
 )
 
