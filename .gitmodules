@@ -22,3 +22,6 @@
 [submodule "plugins/zsh-nvm"]
 	path = plugins/zsh-nvm
 	url = https://github.com/lukechilds/zsh-nvm.git
+[submodule "cron/lib/task-logger"]
+	path = cron/lib/task-logger
+	url = https://github.com/posva/task-logger.sh.git

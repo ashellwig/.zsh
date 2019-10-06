@@ -41,5 +41,5 @@ path=(
     ~/go/bin                                # Go
     ~/.yarn/bin                             # Node.js
     ~/anaconda3/bin                         # Python
+    ~/thinkorswim			    # ThinkOrSwim (Trading Platform)
 )
-
