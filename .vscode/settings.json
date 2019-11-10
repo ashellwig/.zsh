@@ -6,7 +6,7 @@
   },
   "shellcheck.enable": false,
   "shellformat.path": "/home/ahellwig/go/bin/shfmt",
-  "shellformat.flag": "-i 2 -ln bash",
+  "shellformat.flag": "-i 2 -bn -ci -sr -ln bash",
   "shellformat.effectLanguages": [
     "shellscript",
     "dockerfile",
