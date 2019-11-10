@@ -35,12 +35,12 @@ if [[ ! -e "$speedtest_log_dir/$speedtest_log_fn" ]]; then
 fi
 
 # Begin Speed Test
-info 'Starting hourly network speed test [~/.zsh/cron/speed_test.sh]' \
-  | logger --id "$log_id"
+logger --id "$log_id" \
+  | info 'Starting hourly network speed test [~/.zsh/cron/speed_test.sh]'
 
-speedtest-cli --simple | tee -a "$speedtest_log_path" \
+logger --id "$log_id" \
+  | speedtest-cli --simple | tee -a "$speedtest_log_path" \
   && echo -e "-------------------\n" | tee -a "$speedtest_log_path" \
-  | logger --id "$log_id" \
   || ko "Failed to run speedtest-cli"
 
 finish "$@"
