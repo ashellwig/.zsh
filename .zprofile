@@ -27,6 +27,10 @@ export PAGER='less'
 # System-wide profile
 source /etc/profile
 
+for f in '/etc/profile.d/'; do
+    source "${f}"
+done
+
 # --- Path ---
 # Programs
 typeset -U path
@@ -36,10 +40,11 @@ path=(
     /sbin
     /usr/{bin,sbin}
     /usr/local/{bin,sbin}
-    ~/.local/bin                            # Locally installed binaries
-    ~/.cargo/bin                            # Rust
-    ~/go/bin                                # Go
-    ~/.yarn/bin                             # Node.js
-    ~/anaconda3/bin                         # Python
-    ~/thinkorswim			    # ThinkOrSwim (Trading Platform)
+    ~/.local/bin # Locally installed binaries
+    ~/.cargo/bin # Rust
+    ~/go/bin # Go
+    ~/.yarn/bin # Node.js
+    ~/anaconda3/bin # Python
+    ~/thinkorswim # ThinkOrSwim (Trading Platform)
+    ~/opt/cuda
 )

@@ -10,25 +10,24 @@
 ## at least while the computer is in a powered-on state).
 ##
 
+local logging_lib='/home/ahellwig/.zsh/cron/lib/task-logger'
+# Load the logging library
+source "${logging_lib}/task-logger.sh"
+
 function perform_speed_test() {
-    # Variables
-    logging_lib='/home/ahellwig/.zsh/cron/lib/task-logger'
+  # Begin Speed Test
+  working -n 'Starting hourly network speed test [~/.zsh/cron/speed-test.sh]'
+  echo
 
-    # Load the logging library
-    source "${logging_lib}/task-logger.sh"
+  speedtest-cli --simple
 
-    # Begin Speed Test
-    working -n 'Starting hourly network speed test [~/.zsh/cron/speed-test.sh]'
-    echo
-
-    speedtest-cli --simple
-
-    finish
-    echo "----------"
+  echo "----------"
 }
 
 function main() {
-    perform_speed_test >> /home/ahellwig/tmp/speedtest.log
+  echo "$(info "Performing speedtest...")" | logger --id "[speed-test]"
+  perform_speed_test >>/home/ahellwig/tmp/speedtest.log || ko
+  finish
 }
 
-main
+main "$@"

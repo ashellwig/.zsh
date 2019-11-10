@@ -1,3 +1,17 @@
 {
-  "shellcheck.enable": false
+  "[shellscript]": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "shellcheck.enable": false,
+  "shellformat.path": "/home/ahellwig/go/bin/shfmt",
+  "shellformat.flag": "-i 2 -ln bash",
+  "shellformat.effectLanguages": [
+    "shellscript",
+    "dockerfile",
+    "dotenv",
+    "ignore",
+    "gitignore",
+  ]
 }

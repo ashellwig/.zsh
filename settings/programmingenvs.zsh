@@ -6,17 +6,21 @@
 # --- Perl ---
 # CPAN
 ## Environment Variables
-PATH="/home/ahellwig/perl5/bin${PATH:+:${PATH}}"; export PATH;
-PERL5LIB="/home/ahellwig/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="/home/ahellwig/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"/home/ahellwig/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/home/ahellwig/perl5"; export PERL_MM_OPT;
+PATH="/home/ahellwig/perl5/bin${PATH:+:${PATH}}"
+export PATH
+PERL5LIB="/home/ahellwig/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"
+export PERL5LIB
+PERL_LOCAL_LIB_ROOT="/home/ahellwig/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"
+export PERL_LOCAL_LIB_ROOT
+PERL_MB_OPT="--install_base \"/home/ahellwig/perl5\""
+export PERL_MB_OPT
+PERL_MM_OPT="INSTALL_BASE=/home/ahellwig/perl5"
+export PERL_MM_OPT
 
 # --- WebAssembly ---
 # EMSDK
 # Source the EMSDK Environment
 # alias emsenv="source ${HOME}/SDKs/emsdk/emsdk_env.sh --release"
-
 
 # --- C/C++ ---
 # Compiler Option
@@ -24,18 +28,16 @@ PERL_MM_OPT="INSTALL_BASE=/home/ahellwig/perl5"; export PERL_MM_OPT;
 #export CXX=clang++
 # Linking
 ## CUDA
-# export CUDA_PATH='/opt/cuda'
+export CUDA_PATH='/usr/local/cuda'
 # export PATH="$CUDA_PATH/bin{$PATH:+${PATH}}"
-# export LD_LIBRARY_PATH="$CUDA_PATH/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
+export LD_LIBRARY_PATH="$CUDA_PATH/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
 ## Bioinformatics
 #export NCBI_VDB_LIBDIR=/usr/local/ncbi/ncbi-vdb/lib64
 #export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${NCBI_VDB_LIBDIR}"
 
-
 # --- Go ---
 # GOPATH
 export GOPATH="$HOME/go"
-
 
 # --- LaTeX ---
 # export TEXDIR='/usr/local/texlive/2018'
@@ -45,7 +47,6 @@ export GOPATH="$HOME/go"
 # export TEXMFVAR="${HOME}/.texlive/texmf-var"
 # export TEXMFCONFIG="${HOME}/.texlive/texmf-config"
 # export TEXMFHOME="${HOME}/texmf"
-
 
 # --- Python ---
 # Conda
@@ -88,7 +89,6 @@ ANDROID_HOME="/home/ahellwig/SDKs/Android/Sdk"
 # We have to source it last, so we will just use a variablet to configure
 # whether or not to run its init script at the end of ../.zshrc
 #export INIT_RVM_USER=false
-
 
 # --- Windows Development ---
 
