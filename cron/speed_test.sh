@@ -39,7 +39,8 @@ logger --id "$log_id" \
   | info 'Starting hourly network speed test [~/.zsh/cron/speed_test.sh]'
 
 logger --id "$log_id" \
-  | speedtest-cli --simple | tee -a "$speedtest_log_path" \
+  | echo -e "$(date)" | tee -a "$speedtest_log_path" \
+  && speedtest-cli --simple | tee -a "$speedtest_log_path" \
   && echo -e "-------------------\n" | tee -a "$speedtest_log_path" \
   || ko "Failed to run speedtest-cli"
 
