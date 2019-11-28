@@ -20,4 +20,8 @@ elif [[ ! -d ${ZDOTDIR}/functions/powerlevel9k ]]; then
   prompt fade blue
 fi
 
+# Set cursor style
+typeset -A ZSH_HIGHLIGHT_STYLES
+ZSH_HIGHLIGHT_STYLES[cursor]=underline
+
 # vim: set et ts=2 sw=2:
