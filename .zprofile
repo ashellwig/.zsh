@@ -10,7 +10,9 @@
 # XDG Base Directories
 source "${ZDOTDIR}/settings/xdg-user-dirs-settings.zsh"
 # Programming
-source ${ZDOTDIR}/settings/programmingenvs.zsh
+source "${ZDOTDIR}/settings/programmingenvs.zsh"
+# Audio Applications
+source "${ZDOTDIR}/settings/audio/daw_env.zsh"
 # Shell
 export ZSH_CONFIG_DIRS="$HOME/.zsh"
 export ZDOTDIR="${HOME}/.zsh"
@@ -28,23 +30,23 @@ export PAGER='less'
 source /etc/profile
 
 for f in '/etc/profile.d/'; do
-    source "${f}"
+  source "${f}"
 done
 
 # --- Path ---
 # Programs
 typeset -U path
 path=(
-    "${PATH}"
-    /bin
-    /sbin
-    /usr/{bin,sbin}
-    /usr/local/{bin,sbin}
-    ~/.local/bin # Locally installed binaries
-    ~/.cargo/bin # Rust
-    ~/go/bin # Go
-    ~/.yarn/bin # Node.js
-    ~/anaconda3/bin # Python
-    ~/thinkorswim # ThinkOrSwim (Trading Platform)
-    ~/opt/cuda
+  "${PATH}"
+  /bin
+  /sbin
+  /usr/{bin,sbin}
+  /usr/local/{bin,sbin}
+  ~/.local/bin    # Locally installed binaries
+  ~/.cargo/bin    # Rust
+  ~/go/bin        # Go
+  ~/.yarn/bin     # Node.js
+  ~/anaconda3/bin # Python
+  ~/thinkorswim   # ThinkOrSwim (Trading Platform)
+  ~/opt/cuda
 )
