@@ -18,7 +18,7 @@
     "gitignore",
   ],
   /* Theme Modifications */
-  "workbench.colorTheme": "Dracula",
+  "workbench.colorTheme": "One Dark Pro",
   // Syntax Highlighting
   "editor.tokenColorCustomizations": {
     "[Visual Studio Dark]": {

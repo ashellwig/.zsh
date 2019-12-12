@@ -12,8 +12,8 @@ source "${ZDOTDIR}/settings/xdg-user-dirs-settings.zsh"
 # Programming
 source "${ZDOTDIR}/settings/programmingenvs.zsh"
 # Audio Applications
-source "${ZDOTDIR}/settings/audio/daw_env.zsh"
-source "${ZDOTDIR}/settings/audio/ardour.zsh"
+# source "${ZDOTDIR}/settings/audio/daw_env.zsh"
+# source "${ZDOTDIR}/settings/audio/ardour.zsh"
 # Shell
 export ZSH_CONFIG_DIRS="$HOME/.zsh"
 export ZDOTDIR="${HOME}/.zsh"
