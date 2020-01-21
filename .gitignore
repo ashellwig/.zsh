@@ -1,10 +1,18 @@
+# System
+*.*.swp
+*.swp
+
+# Zsh
 .histfile
 *.zcompcache/*
 .zcompdump
 .zcompdump.*.*
-*.*.swp
-*.swp
+*.zwc*
+
+# Works in Progress/Scratch pads
 *.bak
 .*.bak*
 *.*.bak
-
+functions.d/highlight_duplicates.zsh
+plugins/pretty_printer/**
+!plugins/pretty_printer/.git
