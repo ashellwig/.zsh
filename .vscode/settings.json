@@ -1,4 +1,7 @@
 {
+  /* Editor Settings */
+  /* Language Settings */
+  // Shell
   "[shellscript]": {
     "editor.formatOnSave": false,
     "editor.tabSize": 2,

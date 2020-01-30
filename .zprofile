@@ -43,11 +43,12 @@ path=(
   /sbin
   /usr/{bin,sbin}
   /usr/local/{bin,sbin}
-  ~/.local/bin    # Locally installed binaries
-  ~/.cargo/bin    # Rust
-  ~/go/bin        # Go
-  ~/.yarn/bin     # Node.js
-  ~/anaconda3/bin # Python
-  ~/thinkorswim   # ThinkOrSwim (Trading Platform)
-  ~/opt/cuda
+  ~/.local/bin                     # Locally installed binaries
+  ~/.cargo/bin                     # Rust
+  ~/go/bin                         # Go
+  ~/.yarn/bin                      # Node.js
+  ~/anaconda3/bin                  # Python
+  ~/.local/share/TEE-CLC/14.114.0  # Visual Studio Team Services
+  ~/thinkorswim                    # ThinkOrSwim (Trading Platform)
+  ~/opt/cuda/bin                   # nVidia CUDA Tools
 )
