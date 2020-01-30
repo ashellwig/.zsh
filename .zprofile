@@ -50,6 +50,6 @@ path=(
   ~/anaconda3/bin                        # Python
   ~/.local/share/TEE-CLC/14.114.0        # Visual Studio Team Services
   ~/thinkorswim                          # ThinkOrSwim (Trading Platform)
-  ~/SDKs/Android/Sdk/platform-tools/bin  # Android Platform Tools
+  ~/SDKs/Android/Sdk/platform-tools      # Android Platform Tools
   ~/opt/cuda/bin                         # nVidia CUDA Tools
 )
