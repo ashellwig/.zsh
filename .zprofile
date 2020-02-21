@@ -44,6 +44,7 @@ path=(
   /usr/{bin,sbin}
   /usr/local/{bin,sbin}
   ~/.local/bin                           # Locally installed binaries
+  ~/.local/bin/scripts                   # Locally installed scripts
   ~/.cargo/bin                           # Rust
   ~/go/bin                               # Go
   ~/.yarn/bin                            # Node.js
