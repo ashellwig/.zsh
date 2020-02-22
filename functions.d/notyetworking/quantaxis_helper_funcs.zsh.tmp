@@ -116,9 +116,6 @@ Options:
 END
 }
 
-##
-##
-##
 check_qa_ports_lsof() {
   declare colonchar=':'
 
