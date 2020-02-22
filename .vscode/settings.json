@@ -3,18 +3,19 @@
   /* Language Settings */
   // Shell
   "[shellscript]": {
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true,
     "editor.tabSize": 2,
-    "editor.insertSpaces": true
+    "editor.insertSpaces": true,
+    "editor.defaultFormatter": "foxundermoon.shell-format"
   },
   "shellcheck.enable": false,
-  "shellformat.path": "/home/ahellwig/go/bin/shfmt",
-  "shellformat.flag": "-i 2 -bn -ci -sr -ln bash",
   "shellcheck.exclude": [
     "zsh"
   ],
+  "shellformat.path": "/home/ahellwig/go/bin/shfmt",
+  "shellformat.flag": "-i 2 -bn -ci -sr -ln bash",
   "shellformat.effectLanguages": [
-    // "shellscript",
+    "shellscript",
     "dockerfile",
     "dotenv",
     "ignore",

@@ -53,4 +53,6 @@ path=(
   ~/thinkorswim                          # ThinkOrSwim (Trading Platform)
   ~/SDKs/Android/Sdk/platform-tools      # Android Platform Tools
   ~/opt/cuda/bin                         # nVidia CUDA Tools
+  ~/SDKs/flutter/bin                     # Flutter Framework SDK Tools
+  ~/SDKs/emsdk                           # Emscripten SDK
 )
