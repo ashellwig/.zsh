@@ -62,8 +62,8 @@ zstyle ':completion:*' cache-path "${ZDOTDIR}/.zcompcache"
 function conda-clear-zsh-cache() {
   if [[ -e "${ZDOTDIR}/.zcompcache" || -e "~/.zcompcache" ]]; then
     echo -e "\033[1;33mClearing conda from cache...\033[0m\n"
-    sed -i '/^_conda/ d' "${ZDOTDIR}/.zcompcache" ||
-      sed -i '/^_conda/ d' "~/.zcompcache"
+    sed -i '/^_conda/ d' "${ZDOTDIR}/.zcompcache" \
+      || sed -i '/^_conda/ d' "~/.zcompcache"
   else
     echo -e "\033[1;31m.zcompcache not found\033[0m"
     return 0
@@ -91,5 +91,8 @@ ANDROID_HOME="/home/ahellwig/SDKs/Android/Sdk"
 #export INIT_RVM_USER=false
 
 # --- Windows Development ---
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
+export MSBuildSDKsPath=$(echo /usr/share/dotnet/sdk/3.1.102/Sdks)
+export DOTNET_ROOT='/usr/share/dotnet/sdk/3.1.102'
 
 # vim: set et ts=2 sw=2 ft=zsh:
