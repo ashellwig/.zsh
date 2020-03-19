@@ -20,5 +20,21 @@
     "dotenv",
     "ignore",
     "gitignore",
+  ],
+  "cSpell.enableFiletypes": [
+    "!jsonc",
+    "!shellscript",
+    "asciidoc",
+    "c",
+    "cpp",
+    "git-commit",
+    "html",
+    "latex",
+    "markdown",
+    "plaintext",
+    "restructuredtext",
+    "text",
+    "yaml",
+    "yml"
   ]
 }

@@ -17,8 +17,10 @@ source "${ZDOTDIR}/settings/programmingenvs.zsh"
 # Shell
 export ZSH_CONFIG_DIRS="$HOME/.zsh"
 export ZDOTDIR="${HOME}/.zsh"
+## When using login/interactive shell:
 export TERM=xterm-termite
-export TERMINFO=/usr/lib/terminfo
+# SSH
+source "${ZDOTDIR}/settings/ssh-env.zsh"
 # Browser
 export BROWSER='/bin/google-chrome-stable'
 # Editor
@@ -46,6 +48,7 @@ path=(
   ~/.local/bin                      # Locally installed binaries
   ~/.local/bin/scripts              # Locally installed scripts
   ~/.cargo/bin                      # Rust
+  ~/SDKs/emsdk                      # Emscripten SDK
   ~/go/bin                          # Go
   ~/.yarn/bin                       # Node.js
   ~/anaconda3/bin                   # Python
@@ -54,6 +57,5 @@ path=(
   ~/SDKs/Android/Sdk/platform-tools # Android Platform Tools
   ~/opt/cuda/bin                    # nVidia CUDA Tools
   ~/SDKs/flutter/bin                # Flutter Framework SDK Tools
-  ~/SDKs/emsdk                      # Emscripten SDK
   ~/.dotnet/tools                   # .NET Core Tools
 )

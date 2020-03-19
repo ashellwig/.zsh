@@ -1,0 +1,36 @@
+set autowrite
+set cursorline
+set number
+set showtabline=2
+set ttymouse=sgr
+set background=dark
+set expandtab
+set pyxversion=3
+set syntax=zsh
+set colorcolumn=81
+set filetype=zsh
+set ruler
+set tabstop=2
+set comments=:#
+set helplang=en
+set scroll=26
+set ttimeoutlen=10
+set cpoptions=aAceFsB   laststatus=2        shiftwidth=2        ttyfast
+set backspace=indent,eol,start
+set backupdir=~/.cache/vim/backup//
+set commentstring=# %s
+set completefunc=youcompleteme#CompleteFunc
+set completeopt=preview,menuone
+set directory=~/.cache/vim/swap//
+set fileencoding=utf-8
+set fileencodings=ucs-bom,utf-8,default,latin1
+set formatoptions=croql
+set indentexpr=GetShIndent()
+set indentkeys=0{,0},0),0],!^F,o,O,e,0=then,0=do,0=else,0=elif,0=fi,0=esac,0=done,0=end,),0=;;,0=;&,0=fin,0=fil,0=fip,0=fir,0=fix
+set omnifunc=omnifunc#syntaxcomplete
+set runtimepath=~/.vim,~/.vim/plugged/vimproc.vim/,~/.vim/plugged/bash-support/,~/.vim/plugged/vim-shfmt/,~/.vim/plugged/syntastic/,~/.vim/plugged/YouCompleteMe/,~/.vim/plugged/tagbar/,~/.vim/plugged/auto-pairs/,~/.vim/plugged/nerdcommenter/,~/.vim/plugged/vim-airline/,~/.vim/plugged/vim-airline-themes/,~/.vim/plugged/base16-vim/,/usr/share/vim/vimfiles,/usr/share/vim/vim82,/usr/share/vim/vimfiles/after,~/.vim/after
+set shortmess=filnxtToOSc
+set statusline=%!airline#statusline(1)
+set suffixes=.bak,~,.o,.info,.swp,.aux,.bbl,.blg,.brf,.cb,.dvi,.idx,.ilg,.ind,.inx,.jpg,.log,.out,.png,.
+set toc
+set undodir=~/.cache/vim/undo//

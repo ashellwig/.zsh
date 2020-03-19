@@ -12,14 +12,14 @@ typeset -U fpath
 fpath=(
   $fpath
   ${ZDOTDIR}/functions/zsh-completions/src
-  )
+)
 if [[ -d ${HOME}/Sec/efw/functions/zsh ]]; then
   fpath=(
     "${fpath[@]}"
     ${HOME}/Sec/efw/functions/zsh
   )
 fi
-for func in $^fpath/*(N-.x:t); autoload $func
+for func in $^fpath/*(N-.x:t); do autoload $func; done
 
 # --- Functions ---
 # Completion
@@ -32,9 +32,9 @@ if [[ -d ${ZDOTDIR}/functions.d ]]; then
 fi
 # Plugins
 if [[ -d ${ZDOTDIR}/plugins ]]; then
-    for file in ${ZDOTDIR}/plugins/*/*.plugin.zsh; do
-      . "$file"
-    done
+  for file in ${ZDOTDIR}/plugins/*/*.plugin.zsh; do
+    . "$file"
+  done
 fi
 
 # --- Options / Settings ---
@@ -43,10 +43,7 @@ fi
 # History
 . ${ZDOTDIR}/settings/historysettings.zsh
 # SSH
-if [[ -n "$SSH_TTY" ]] || [[ -n "$SSH_CONNECTION" ]] || [[ -n "$SSH_CLIENT" ]];
-  then
-  export TERM='xterm-256color'
-fi
+. ${ZDOTDIR}/settings/ssh-env.zsh
 # Option Scripts
 if [[ -d ${ZDOTDIR}/options ]]; then
   for file in ${ZDOTDIR}/options/*.zsh; do
