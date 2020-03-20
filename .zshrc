@@ -12,13 +12,9 @@ typeset -U fpath
 fpath=(
   $fpath
   ${ZDOTDIR}/functions/zsh-completions/src
+  ${ZDOTDIR}/site-functions/functions/
 )
-if [[ -d ${HOME}/Sec/efw/functions/zsh ]]; then
-  fpath=(
-    "${fpath[@]}"
-    ${HOME}/Sec/efw/functions/zsh
-  )
-fi
+
 for func in $^fpath/*(N-.x:t); do autoload $func; done
 
 # --- Functions ---
