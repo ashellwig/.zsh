@@ -12,9 +12,16 @@ yadm clone https://github.com/ashellwig/dotfiles
 ```
 
 * Vanilla Zsh
+
+Execute the following in your terminal (the last line means to logout of your
+terminal and/or restart your Xserver for the changes to take effect).
+
 ```bash
 export ZDOTDIR=~/.zsh
-git clone https://github.com/ashellwig/.zsh.git ${ZDOTDIR}
+git clone https://github.com/ashellwig/.zsh.git $ZDOTDIR
+cd $ZDOTDIR
+git checkout pi
+logout || exit
 ```
 
 ## Features
@@ -40,9 +47,3 @@ git clone https://github.com/ashellwig/.zsh.git ${ZDOTDIR}
     * nvm is an awesome tool but it can be kind of a pain to install and keep up
     to date. This zsh plugin allows you to quickly setup nvm once, save it in
     your dotfiles, then never worry about it again.
-* `./functions.d`
-  * See [.zsh/functions.d/README.md](https://github.com/ashellwig/.zsh/blob/master/functions.d/README.md)
-* `./options`
-  * See [.zsh/options/README.md]()
-* `./settings`
-  * See [.zsh/settings/README.md]()

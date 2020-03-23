@@ -38,8 +38,6 @@ fi
 . ${ZDOTDIR}/settings/syntaxhighlightsettings.zsh
 # History
 . ${ZDOTDIR}/settings/historysettings.zsh
-# SSH
-. ${ZDOTDIR}/settings/ssh-env.zsh
 # Option Scripts
 if [[ -d ${ZDOTDIR}/options ]]; then
   for file in ${ZDOTDIR}/options/*.zsh; do

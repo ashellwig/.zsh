@@ -5,17 +5,17 @@
 
 # --- Perl ---
 # CPAN
-## Environment Variables
-PATH="/home/ahellwig/perl5/bin${PATH:+:${PATH}}"
-export PATH
-PERL5LIB="/home/ahellwig/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"
-export PERL5LIB
-PERL_LOCAL_LIB_ROOT="/home/ahellwig/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"
-export PERL_LOCAL_LIB_ROOT
-PERL_MB_OPT="--install_base \"/home/ahellwig/perl5\""
-export PERL_MB_OPT
-PERL_MM_OPT="INSTALL_BASE=/home/ahellwig/perl5"
-export PERL_MM_OPT
+# ## Environment Variables
+# PATH="/home/ahellwig/perl5/bin${PATH:+:${PATH}}"
+# export PATH
+# PERL5LIB="/home/ahellwig/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"
+# export PERL5LIB
+# PERL_LOCAL_LIB_ROOT="/home/ahellwig/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"
+# export PERL_LOCAL_LIB_ROOT
+# PERL_MB_OPT="--install_base \"/home/ahellwig/perl5\""
+# export PERL_MB_OPT
+# PERL_MM_OPT="INSTALL_BASE=/home/ahellwig/perl5"
+# export PERL_MM_OPT
 
 # --- WebAssembly ---
 # EMSDK
@@ -28,16 +28,16 @@ export PERL_MM_OPT
 #export CXX=clang++
 # Linking
 ## CUDA
-export CUDA_PATH='/usr/local/cuda'
+# export CUDA_PATH='/usr/local/cuda'
 # export PATH="$CUDA_PATH/bin{$PATH:+${PATH}}"
-export LD_LIBRARY_PATH="$CUDA_PATH/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
+# export LD_LIBRARY_PATH="$CUDA_PATH/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
 ## Bioinformatics
 #export NCBI_VDB_LIBDIR=/usr/local/ncbi/ncbi-vdb/lib64
 #export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${NCBI_VDB_LIBDIR}"
 
 # --- Go ---
 # GOPATH
-export GOPATH="$HOME/go"
+# export GOPATH="$HOME/go"
 
 # --- LaTeX ---
 # export TEXDIR='/usr/local/texlive/2018'
@@ -50,25 +50,25 @@ export GOPATH="$HOME/go"
 
 # --- Python ---
 # Conda
-source /home/ahellwig/anaconda3/etc/profile.d/conda.sh
+# source /home/ahellwig/anaconda3/etc/profile.d/conda.sh
 ## Conda Completions
 ### Load Completions
-fpath+=${ZDOTDIR}/functions/conda_zsh_completion
-autoload compinit && compinit conda
+# fpath+=${ZDOTDIR}/functions/conda_zsh_completion
+# autoload compinit && compinit conda
 ### Activate package cache
-zstyle ':completion::complete:*' use-cache 1
-zstyle ':completion:*' cache-path "${ZDOTDIR}/.zcompcache"
+# zstyle ':completion::complete:*' use-cache 1
+# zstyle ':completion:*' cache-path "${ZDOTDIR}/.zcompcache"
 ### Clean conda package cache
-function conda-clear-zsh-cache() {
-  if [[ -e "${ZDOTDIR}/.zcompcache" || -e "~/.zcompcache" ]]; then
-    echo -e "\033[1;33mClearing conda from cache...\033[0m\n"
-    sed -i '/^_conda/ d' "${ZDOTDIR}/.zcompcache" \
-      || sed -i '/^_conda/ d' "~/.zcompcache"
-  else
-    echo -e "\033[1;31m.zcompcache not found\033[0m"
-    return 0
-  fi
-}
+# function conda-clear-zsh-cache() {
+  # if [[ -e "${ZDOTDIR}/.zcompcache" || -e "~/.zcompcache" ]]; then
+    # echo -e "\033[1;33mClearing conda from cache...\033[0m\n"
+    # sed -i '/^_conda/ d' "${ZDOTDIR}/.zcompcache" \
+      # || sed -i '/^_conda/ d' "~/.zcompcache"
+  # else
+    # echo -e "\033[1;31m.zcompcache not found\033[0m"
+    # return 0
+  # fi
+# }
 # pip zsh completion
 function _pip_completion() {
   local words cword
@@ -81,8 +81,8 @@ function _pip_completion() {
 compctl -K _pip_completion pip
 
 # --- Android ---
-ANDROID_SDK_ROOT="/home/ahellwig/SDKs/Android/Sdk"
-ANDROID_HOME="/home/ahellwig/SDKs/Android/Sdk"
+# ANDROID_SDK_ROOT="/home/ahellwig/SDKs/Android/Sdk"
+# ANDROID_HOME="/home/ahellwig/SDKs/Android/Sdk"
 
 # --- Ruby ---
 # RVM
@@ -91,8 +91,8 @@ ANDROID_HOME="/home/ahellwig/SDKs/Android/Sdk"
 #export INIT_RVM_USER=false
 
 # --- Windows Development ---
-export DOTNET_CLI_TELEMETRY_OPTOUT=1
-export MSBuildSDKsPath=$(echo /usr/share/dotnet/sdk/3.1.102/Sdks)
-export DOTNET_ROOT='/usr/share/dotnet/sdk/3.1.102'
+# export DOTNET_CLI_TELEMETRY_OPTOUT=1
+# export MSBuildSDKsPath=$(echo /usr/share/dotnet/sdk/3.1.102/Sdks)
+# export DOTNET_ROOT='/usr/share/dotnet/sdk/3.1.102'
 
 # vim: set et ts=2 sw=2 ft=zsh:
