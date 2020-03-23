@@ -28,16 +28,19 @@ export PAGER='less'
 # System-wide profile
 source /etc/profile
 
+SYS_PATH=(
+  /bin
+  /sbin
+  /usr/{bin,sbin,games}
+  /usr/local/{bin,sbin,games}
+)
+
 # --- Path ---
 # Programs
 typeset -U path
 path=(
-  "${PATH}"
-  /bin
-  /sbin
-  /usr/{bin,sbin}
-  /usr/local/{bin,sbin}
-  ~/.local/bin                      # Locally installed binaries
+  "${SYS_PATH[@]}"
+  ~/.local/bin # Locally installed binaries
   # ~/.cargo/bin                      # Rust
   # ~/SDKs/emsdk                      # Emscripten SDK
   # ~/go/bin                          # Go
