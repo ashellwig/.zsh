@@ -1,5 +1,3 @@
-#!/usr/bin/env zsh
-
 backup_documents() {
   if [[ $(mount | grep -c /run/media/ahellwig/5a891670-3360-47ba-a42f-80c3bd7c7c6e) == 1 ]]; then
     sudo rsync \

@@ -12,6 +12,7 @@ typeset -U fpath
 fpath=(
   $fpath
   ${ZDOTDIR}/functions/zsh-completions/src
+  ${ZDOTDIR}/site-functions/
   ${ZDOTDIR}/site-functions/functions/
 )
 
