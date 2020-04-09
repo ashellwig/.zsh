@@ -17,6 +17,20 @@ export PERL_MB_OPT
 PERL_MM_OPT="INSTALL_BASE=/home/ahellwig/perl5"
 export PERL_MM_OPT
 
+# -- Rust --
+# Sets default toolchain and location for the rustup installation.
+# See $ZDOTDIR/site-functions/_rustup for completion definitions.
+#export RUSTUP_HOME="$HOME/.rustup"
+#if [[ "$(rustup show | grep -e '2020-03-19')" >/dev/null ]]; then
+#  export RUSTUP_TOOLCHAIN='nightly-2020-03-19'
+#else
+#  export RUSTUP_TOOLCHAIN=''
+#fi
+#export RUST_SRC_PATH='/home/ahellwig/.rustup/toolchains/nightly-2020-03-19-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src'
+#export RUSTUP_DIST_SERVER='https://static.rust-lang.org'
+#export RUSTUP_DIST_ROOT='https://static.rust-lang.org/dist'
+#export RUSTUP_UPDATE_ROOT='https://static.rust-lang.org/rustup'
+
 # --- WebAssembly ---
 # EMSDK
 # Source the EMSDK Environment

@@ -22,7 +22,7 @@ export TERM=xterm-termite
 # SSH
 source "${ZDOTDIR}/settings/ssh-env.zsh"
 # Browser
-export BROWSER='/bin/google-chrome-stable'
+export BROWSER='/usr/bin/google-chrome-stable'
 # Editor
 export EDITOR='vim'
 export VISUAL='vim'

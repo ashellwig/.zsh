@@ -14,18 +14,23 @@ alias i3l='i3-msg move workspace to output left'
 alias szs="source ${ZDOTDIR}/.zshrc"
 # Systemd
 alias -g sc='sudo systemctl'
+alias -g scu='systemctl --user'
 alias scs='sc status'
+alias scus='sc status'
 alias scb='sc start'
+alias scub='sc start'
 alias scstop='sc stop'
+alias scustop='sc stop'
 alias scd='sc disable'
+alias scud='sc disable'
 alias sce='sc enable'
+alias scue='sc enable'
 # Logs
 alias -g jc='sudo journalctl'
-alias kernellogs="dmesg --human --color=always --follow | most"
+alias kernellogs="dmesg --human --color=always | tail -f"
 # Config getters
 alias show_user_tex_config="cat ${HOME}/.zsh/settings/programmingenvs.zsh | sed -n -e '/#\s---\sLaTeX\s---/,/#\s---\sPython\s---/p' | sed 's/#\sexport/export/g' | grep -e '^export'"
 # SSH connections
-alias sshi='TERM=xterm-256color ssh -p22 $1'
 
 # --- Programs ---
 # Pacman
