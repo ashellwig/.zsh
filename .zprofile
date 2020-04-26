@@ -45,17 +45,16 @@ path=(
   /sbin
   /usr/{bin,sbin}
   /usr/local/{bin,sbin}
+  ~/perl5/bin                       # Perl
+  ~/anaconda3/bin                   # Python
   ~/.local/bin                      # Locally installed binaries
   ~/.local/bin/scripts              # Locally installed scripts
   ~/.cargo/bin                      # Rust
-  ~/SDKs/emsdk                      # Emscripten SDK
   ~/go/bin                          # Go
-  ~/.yarn/bin                       # Node.js
-  ~/anaconda3/bin                   # Python
   ~/.local/share/TEE-CLC/14.114.0   # Visual Studio Team Services
-  ~/thinkorswim                     # ThinkOrSwim (Trading Platform)
-  ~/SDKs/Android/Sdk/platform-tools # Android Platform Tools
   ~/opt/cuda/bin                    # nVidia CUDA Tools
-  ~/SDKs/flutter/bin                # Flutter Framework SDK Tools
+  ~/.yarn/bin                       # Node.js
+  ~/SDKs/Android/Sdk/platform-tools # Android Platform Tools
   ~/.dotnet/tools                   # .NET Core Tools
+  ~/SDKs/flutter/bin                # Flutter Framework SDK Tools
 )

@@ -3,11 +3,13 @@
 # Purpose: Provide access to package manager attached to
 #       programming environments
 
+# --- Haskell ---
+# Completions
+#eval "$(stack --bash-completion-script stack)"
+
 # --- Perl ---
 # CPAN
 ## Environment Variables
-PATH="/home/ahellwig/perl5/bin${PATH:+:${PATH}}"
-export PATH
 PERL5LIB="/home/ahellwig/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"
 export PERL5LIB
 PERL_LOCAL_LIB_ROOT="/home/ahellwig/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"

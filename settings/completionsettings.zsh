@@ -5,6 +5,7 @@
 # --- Functions ---
 autoload ${ZDOTDIR}/functions/zsh-completions/src
 autoload compinit && compinit
+autoload -U +X bashcompinit && bashcompinit # Required for Stack completions
 
 # --- Style ---
 # Cache
