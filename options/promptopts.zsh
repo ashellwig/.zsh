@@ -6,7 +6,7 @@
 
 # Define $PS1
 # Load the Powerlevel 9k Theme
-if [[ -d ${ZDOTDIR}/functions/powerlevel9k ]]; then
+if [[ -d ${ZDOTDIR}/functions/powerlevel10k ]]; then
   # Prompt Elements
   POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status command_execution_time background_jobs context dir vcs)
   POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(anaconda)
@@ -17,8 +17,8 @@ if [[ -d ${ZDOTDIR}/functions/powerlevel9k ]]; then
   POWERLEVEL9K_MODE='nerdfont-complete'
   POWERLEVEL9K_PYTHON_ICON='\ue606'
   POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND='044'
-  . ${ZDOTDIR}/functions/powerlevel9k/powerlevel9k.zsh-theme
-elif [[ ! -d ${ZDOTDIR}/functions/powerlevel9k ]]; then
+  . ${ZDOTDIR}/functions/powerlevel10k/powerlevel10k.zsh-theme
+elif [[ ! -d ${ZDOTDIR}/functions/powerlevel10k ]]; then
   autoload -Uz promptinit && promptinit
   prompt fade blue
 fi
