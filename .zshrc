@@ -6,7 +6,7 @@
 
 # --- Path ---
 # $PATH
-source "${ZDOTDIR}/.zprofile"
+source "${ZDOTDIR}/.zshenv"
 # $FPATH
 typeset -U fpath
 fpath=(

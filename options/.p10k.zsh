@@ -83,17 +83,17 @@
     ranger                  # ranger shell (https://github.com/ranger/ranger)
     nnn                     # nnn shell (https://github.com/jarun/nnn)
     vim_shell               # vim shell indicator (:sh)
-    midnight_commander      # midnight commander shell (https://midnight-commander.org/)
-    nix_shell               # nix shell (https://nixos.org/nixos/nix-pills/developing-with-nix-shell.html)
-    vi_mode                 # vi mode (you don't need this if you've enabled prompt_char)
+    # midnight_commander      # midnight commander shell (https://midnight-commander.org/)
+    # nix_shell               # nix shell (https://nixos.org/nixos/nix-pills/developing-with-nix-shell.html)
+    # vi_mode                 # vi mode (you don't need this if you've enabled prompt_char)
     # vpn_ip                # virtual private network indicator
     # load                  # CPU load
     # disk_usage            # disk usage
     # ram                   # free RAM
     # swap                  # used swap
-    todo                    # todo items (https://github.com/todotxt/todo.txt-cli)
-    timewarrior             # timewarrior tracking status (https://timewarrior.net/)
-    taskwarrior             # taskwarrior task count (https://taskwarrior.org/)
+    # todo                    # todo items (https://github.com/todotxt/todo.txt-cli)
+    # timewarrior             # timewarrior tracking status (https://timewarrior.net/)
+    # taskwarrior             # taskwarrior task count (https://taskwarrior.org/)
     # time                  # current time
     # ip                    # ip address and bandwidth usage for a specified network interface
     # public_ip             # public IP address
@@ -982,7 +982,7 @@
   # - P9K_PACKAGE_NAME     The value of `name` field in package.json.
   # - P9K_PACKAGE_VERSION  The value of `version` field in package.json.
   #
-  # typeset -g POWERLEVEL9K_PACKAGE_CONTENT_EXPANSION='${P9K_PACKAGE_NAME//\%/%%}@${P9K_PACKAGE_VERSION//\%/%%}'
+  typeset -g POWERLEVEL9K_PACKAGE_CONTENT_EXPANSION='${P9K_PACKAGE_NAME//\%/%%}@${P9K_PACKAGE_VERSION//\%/%%}'
   # Custom icon.
   # typeset -g POWERLEVEL9K_PACKAGE_VISUAL_IDENTIFIER_EXPANSION='⭐'
 

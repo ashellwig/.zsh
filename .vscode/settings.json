@@ -9,13 +9,14 @@
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
   "shellcheck.enable": false,
-  "shellcheck.exclude": [
-    "zsh"
-  ],
+  "shellcheck.ignorePatterns": {
+    "**/*.zsh": true,
+    "**/*.ksh": true,
+    "**/**/*.ksh": true
+  },
   "shellformat.path": "/home/ahellwig/go/bin/shfmt",
   "shellformat.flag": "-i 2 -bn -ci -sr -ln bash",
   "shellformat.effectLanguages": [
-    "shellscript",
     "dockerfile",
     "dotenv",
     "ignore",

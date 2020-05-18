@@ -19,6 +19,7 @@ export ZSH_CONFIG_DIRS="$HOME/.zsh"
 export ZDOTDIR="${HOME}/.zsh"
 ## When using login/interactive shell:
 export TERM=xterm-termite
+export TERMINFO=/usr/share/terminfo
 # SSH
 source "${ZDOTDIR}/settings/ssh-env.zsh"
 # Browser
