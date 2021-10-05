@@ -46,7 +46,9 @@ path=(
   /sbin
   /usr/{bin,sbin}
   /usr/local/{bin,sbin}
-  ~/perl5/bin                       # Perl
+  /usr/bin/core_perl                # Perl
+  /usr/bin/site_perl                # Perl
+  /usr/bin/vendor_perl                # Perl
   ~/anaconda3/bin                   # Python
   ~/.local/bin                      # Locally installed binaries
   ~/.local/bin/scripts              # Locally installed scripts

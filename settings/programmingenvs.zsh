@@ -10,14 +10,14 @@
 # --- Perl ---
 # CPAN
 ## Environment Variables
-PERL5LIB="/home/ahellwig/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"
-export PERL5LIB
-PERL_LOCAL_LIB_ROOT="/home/ahellwig/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"
-export PERL_LOCAL_LIB_ROOT
-PERL_MB_OPT="--install_base \"/home/ahellwig/perl5\""
-export PERL_MB_OPT
-PERL_MM_OPT="INSTALL_BASE=/home/ahellwig/perl5"
-export PERL_MM_OPT
+# PERL5LIB="/home/ahellwig/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"
+# export PERL5LIB
+# PERL_LOCAL_LIB_ROOT="/home/ahellwig/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"
+# export PERL_LOCAL_LIB_ROOT
+# PERL_MB_OPT="--install_base \"/home/ahellwig/perl5\""
+# export PERL_MB_OPT
+# PERL_MM_OPT="INSTALL_BASE=/home/ahellwig/perl5"
+# export PERL_MM_OPT
 
 # -- Rust --
 # Sets default toolchain and location for the rustup installation.
@@ -44,9 +44,9 @@ export PERL_MM_OPT
 #export CXX=clang++
 # Linking
 ## CUDA
-export CUDA_PATH='/usr/local/cuda'
+# export CUDA_PATH='/usr/local/cuda'
 # export PATH="$CUDA_PATH/bin{$PATH:+${PATH}}"
-export LD_LIBRARY_PATH="$CUDA_PATH/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
+# export LD_LIBRARY_PATH="$CUDA_PATH/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
 ## Bioinformatics
 #export NCBI_VDB_LIBDIR=/usr/local/ncbi/ncbi-vdb/lib64
 #export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${NCBI_VDB_LIBDIR}"
@@ -85,10 +85,6 @@ unset __conda_setup
 ## Conda Completions
 ### Load Completions
 fpath+=${ZDOTDIR}/functions/conda_zsh_completion
-autoload compinit && compinit conda
-### Activate package cache
-zstyle ':completion::complete:*' use-cache 1
-zstyle ':completion:*' cache-path "${ZDOTDIR}/.zcompcache"
 ### Clean conda package cache
 function conda-clear-zsh-cache() {
   if [[ -e "${ZDOTDIR}/.zcompcache" || -e "~/.zcompcache" ]]; then
