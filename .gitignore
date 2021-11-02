@@ -1,6 +1,7 @@
 # System
 *.*.swp
 *.swp
+**/.DS_Store/**
 
 # Zsh
 .histfile
