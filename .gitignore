@@ -2,6 +2,7 @@
 *.*.swp
 *.swp
 **/.DS_Store/**
+.DS_Store
 
 # Zsh
 .histfile
@@ -9,6 +10,9 @@
 .zcompdump
 .zcompdump.*.*
 *.zwc*
+## Found on MAC_OS
+**/.zsh_sessions/**
+.zsh_history
 
 # Works in Progress/Scratch pads
 *.bak

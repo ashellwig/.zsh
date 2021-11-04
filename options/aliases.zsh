@@ -34,9 +34,8 @@ alias show_user_tex_config="cat ${HOME}/.zsh/settings/programmingenvs.zsh | sed 
 
 # --- Programs ---
 # ls
-#alias ls='ls -FBah'
-#alias lsa='ls -FBahl'
-alias lsa='ls -lFah'
+alias ls='ls -Fa --color=always'
+alias lsa='ls -Fahl --color=always'
 
 # vim: set et ft=zsh sw=2 ts=2:
 
