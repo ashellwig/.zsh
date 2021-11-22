@@ -50,14 +50,15 @@ path=(
   /sbin                                         # System secure binaries
   /usr/{bin,sbin}                               # System user binaries
   /usr/local/{bin,sbin}                         # System user local binaries
-  /usr/local/texlive/2021/bin/universal-darwin  # TeXLive/MacTeX
-  /opt/homebrew/bin                             # HomeBrew System Binaries
-  /opt/homebrew/opt/llvm@13/bin                 # LLVM 13
-  ~/perl5/bin                                   # Perl
-  ~/anaconda3/bin                               # Python
-  ~/.local/bin                                  # Locally installed binaries
-  ~/.local/bin/scripts                          # Locally installed scripts
-  ~/SDKs/flutter/bin                            # Flutter Framework SDK Tools
+  # /usr/local/texlive/2021/bin/universal-darwin  # TeXLive/MacTeX
+  /opt/homebrew/bin
+  /opt/homebrew/sbin
+  # /opt/homebrew/opt/llvm@13/bin                 # LLVM 13
+  # ~/perl5/bin                                   # Perl
+  # ~/anaconda3/bin                               # Python
+  # ~/.local/bin                                  # Locally installed binaries
+  # ~/.local/bin/scripts                          # Locally installed scripts
+  # ~/SDKs/flutter/bin                            # Flutter Framework SDK Tools
   #~/.cargo/bin                                 # Rust
   #~/go/bin                                     # Go
   #~/.local/share/TEE-CLC/14.114.0              # Visual Studio Team Services

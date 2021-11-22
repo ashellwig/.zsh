@@ -6,18 +6,18 @@
 # --- Haskell [Language] ---
 # Completions
 #eval "$(stack --bash-completion-script stack)"
-[ -f "/Users/ashwig-personal/.ghcup/env" ] && source "/Users/ashwig-personal/.ghcup/env"
+# [ -f "/Users/ashwig-personal/.ghcup/env" ] && source "/Users/ashwig-personal/.ghcup/env"
 
 # --- Perl [Language] ---
 # CPAN
 ## Environment Variables
-PATH="/$HOME/perl5/bin${PATH:+:${PATH}}"; export PATH;
-PERL5LIB="/$HOME/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="/$HOME/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"/$HOME/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/$HOME/perl5"; export PERL_MM_OPT;
-ERL_MM_OPT="INSTALL_BASE=$HOME/perl5" cpan local::lib >/dev/null
-echo 'eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"' >/dev/null
+# PATH="/$HOME/perl5/bin${PATH:+:${PATH}}"; export PATH;
+# PERL5LIB="/$HOME/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+# PERL_LOCAL_LIB_ROOT="/$HOME/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+# PERL_MB_OPT="--install_base \"/$HOME/perl5\""; export PERL_MB_OPT;
+# PERL_MM_OPT="INSTALL_BASE=/$HOME/perl5"; export PERL_MM_OPT;
+# ERL_MM_OPT="INSTALL_BASE=$HOME/perl5" cpan local::lib >/dev/null
+# echo 'eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"' >/dev/null
 
 # -- Rust [Language] --
 # Sets default toolchain and location for the rustup installation.
@@ -52,8 +52,8 @@ echo 'eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"' >/dev/nul
 #export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${NCBI_VDB_LIBDIR}"
 
 # --- Go [Language] ---
-export LDFLAGS="${LDFLAGS}:-L/$HOME/SDKs/homebrew/opt/openssl@3/lib"
-export CPPFLAGS="${CPPFLAGS}:-I/$HOME/SDKs/homebrew/opt/openssl@3/include"
+# export LDFLAGS="${LDFLAGS}:-L/$HOME/SDKs/homebrew/opt/openssl@3/lib"
+# export CPPFLAGS="${CPPFLAGS}:-I/$HOME/SDKs/homebrew/opt/openssl@3/include"
 # GOPATH
 # export GOPATH="$HOME/go"
 
@@ -129,11 +129,11 @@ export CPPFLAGS="${CPPFLAGS}:-I/$HOME/SDKs/homebrew/opt/openssl@3/include"
 # export DOTNET_ROOT='/usr/share/dotnet/sdk/3.1.102'
 
 # --- Homebrew [Package Manager] ---
-eval "$(/opt/homebrew/bin/brew shellenv)"
+# eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # --- Flutter [Framework] ---
 ## Check if already added to $PATH, if not, add it
-[[ ":$PATH:" != *":${HOME}/SDKs/flutter/bin:" ]] && PATH="${PATH}:${HOME}/SDKs/flutter/bin"
+# [[ ":$PATH:" != *":${HOME}/SDKs/flutter/bin:" ]] && PATH="${PATH}:${HOME}/SDKs/flutter/bin"
 
 # --- Windows Development ---
 #export DOTNET_CLI_TELEMETRY_OPTOUT=1
