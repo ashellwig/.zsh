@@ -41,30 +41,23 @@ if [[ -e '/etc/profile' ]]; then
   fi
 fi
 
+if [[ "$(uname -s)" == 'Darwin' ]] \
+  && [[ "$(whoami)" == 'ashwig-personal' ]]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
 # --- Path ---
 # Programs
 typeset -U path
 path=(
+  /opt/homebrew/opt/openssl@3/bin               # OpenSSL
+  ~/opt/anaconda3/bin                           # Python
+  ~/opt/anaconda3/envs/bargen_env/bin           # Python (bargen_env)
   "${PATH}"                                     # PATH sourced previously
   /bin                                          # System binaries
   /sbin                                         # System secure binaries
   /usr/{bin,sbin}                               # System user binaries
   /usr/local/{bin,sbin}                         # System user local binaries
-  # /usr/local/texlive/2021/bin/universal-darwin  # TeXLive/MacTeX
-  /opt/homebrew/bin
-  /opt/homebrew/sbin
-  # /opt/homebrew/opt/llvm@13/bin                 # LLVM 13
-  # ~/perl5/bin                                   # Perl
-  # ~/anaconda3/bin                               # Python
-  # ~/.local/bin                                  # Locally installed binaries
-  # ~/.local/bin/scripts                          # Locally installed scripts
-  # ~/SDKs/flutter/bin                            # Flutter Framework SDK Tools
-  #~/.cargo/bin                                 # Rust
-  #~/go/bin                                     # Go
-  #~/.local/share/TEE-CLC/14.114.0              # Visual Studio Team Services
-  #~/opt/cuda/bin                               # nVidia CUDA Tools
-  #~/.yarn/bin                                  # Node.js
-  #~/SDKs/Android/Sdk/platform-tools            # Android Platform Tools
-  #~/.dotnet/tools                              # .NET Core Tools
+  ~/.local/bin                                  # Locally installed binaries
+  ~/.local/bin/scripts                          # Locally installed scripts
 )
-

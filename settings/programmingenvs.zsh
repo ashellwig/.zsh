@@ -68,22 +68,20 @@
 
 # --- Python [Language] ---
 # Conda
-## Conda Initialize
-# __conda_setup="$(
-#   '/home/ahellwig/anaconda3/bin/conda' 'shell.zsh' 'hook' \
-#     2> /dev/null
-# )"
-
-# if [ $? -eq 0 ]; then
-#   eval "$__conda_setup"
-# else
-#   if [ -f "/home/ahellwig/anaconda3/etc/profile.d/conda.sh" ]; then
-#     . "/home/ahellwig/anaconda3/etc/profile.d/conda.sh"
-#   else
-#     export PATH="/home/ahellwig/anaconda3/bin:$PATH"
-#   fi
-# fi
-# unset __conda_setup
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/ashwig-personal/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/ashwig-personal/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/ashwig-personal/opt/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/ashwig-personal/opt/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
 ## Conda Completions
 ### Load Completions
 # fpath+=${ZDOTDIR}/functions/conda_zsh_completion
@@ -131,13 +129,17 @@
 # --- Homebrew [Package Manager] ---
 # eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# --- Flutter [Framework] ---
-## Check if already added to $PATH, if not, add it
-# [[ ":$PATH:" != *":${HOME}/SDKs/flutter/bin:" ]] && PATH="${PATH}:${HOME}/SDKs/flutter/bin"
-
 # --- Windows Development ---
 #export DOTNET_CLI_TELEMETRY_OPTOUT=1
 #export MSBuildSDKsPath=$(echo /usr/share/dotnet/sdk/3.1.102/Sdks)
 #export DOTNET_ROOT='/usr/share/dotnet/sdk/3.1.102'
+
+# --- Android [SDK] ---
+export ANDROID_HOME='/Users/ashwig-personal/Library/Android/sdk'
+
+# --- Flutter [Framework] ---
+## Check if already added to $PATH, if not, add it
+[[ ":$PATH:" != *":${HOME}/SDKs/flutter/bin:" ]] && PATH="${PATH}:${HOME}/SDKs/flutter/bin"
+
 
 # vim: set et ts=2 sw=2 ft=zsh:
