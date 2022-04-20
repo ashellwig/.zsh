@@ -33,10 +33,9 @@ alias show_user_tex_config="cat ${HOME}/.zsh/settings/programmingenvs.zsh | sed 
 # SSH connections
 
 # --- Programs ---
-# Pacman
-alias blackarch-categories='sudo pacman -Sg | grep blackarch'
 # ls
-alias ls='ls -FA --group-directories-first --color=always'
-alias lsa='ls -FAhl --group-directories-first --color=always'
+alias ls='ls -Fa --color=always'
+alias lsa='ls -Fahl --color=always'
 
 # vim: set et ft=zsh sw=2 ts=2:
+

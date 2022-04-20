@@ -16,6 +16,15 @@ fpath=(
   ${ZDOTDIR}/site-functions/functions/
 )
 
+if [[ "$(uname -s)" == 'Darwin' ]]; then
+  if [[ "$(whoami)" == 'ashwig-personal' ]]; then
+    fpath=(
+      $fpath
+      '/opt/homebrew/share/zsh/site-functions'
+    )
+  fi
+fi
+
 for func in $^fpath/*(N-.x:t); do autoload $func; done
 
 # --- Functions ---
