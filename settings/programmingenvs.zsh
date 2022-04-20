@@ -118,8 +118,8 @@ ANDROID_HOME="/home/ahellwig/SDKs/Android/Sdk"
 #export INIT_RVM_USER=false
 
 # --- Windows Development ---
-export DOTNET_CLI_TELEMETRY_OPTOUT=1
-export MSBuildSDKsPath=$(echo /usr/share/dotnet/sdk/3.1.102/Sdks)
-export DOTNET_ROOT='/usr/share/dotnet/sdk/3.1.102'
+#export DOTNET_CLI_TELEMETRY_OPTOUT=1
+#export MSBuildSDKsPath=$(echo /usr/share/dotnet/sdk/3.1.102/Sdks)
+#export DOTNET_ROOT='/usr/share/dotnet/sdk/3.1.102'
 
 # vim: set et ts=2 sw=2 ft=zsh:

@@ -52,6 +52,7 @@ path=(
   ~/anaconda3/bin                   # Python
   ~/.local/bin                      # Locally installed binaries
   ~/.local/bin/scripts              # Locally installed scripts
+  ~/.local/bin/scripts/sh
   ~/.cargo/bin                      # Rust
   ~/go/bin                          # Go
   ~/.local/share/TEE-CLC/14.114.0   # Visual Studio Team Services

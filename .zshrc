@@ -54,3 +54,4 @@ fi
 . ${ZDOTDIR}/functions/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # vim: set et ts=2 sw=2:
+export HOTDISHHONEY_FOOTER_PATH="/wp-content/themes/<YOURTHEME>/footer.php"
