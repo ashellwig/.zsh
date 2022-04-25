@@ -30,9 +30,9 @@
 # -- Rust [Language] --
 # Sets default toolchain and location for the rustup installation.
 # See $ZDOTDIR/site-functions/_rustup for completion definitions.
-export RUSTUP_HOME="$HOME/.rustup"
-source "${HOME}/.cargo/env"
-export PATH="$PATH:~/.cargo/env"
+# export RUSTUP_HOME="$HOME/.rustup"
+# source "${HOME}/.cargo/env"
+# export PATH="$PATH:~/.cargo/env"
 #if [[ "$(rustup show | grep -e '2020-03-19')" >/dev/null ]]; then
 #  export RUSTUP_TOOLCHAIN='nightly-2020-03-19'
 #else

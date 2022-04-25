@@ -18,12 +18,13 @@ source "${ZDOTDIR}/settings/programmingenvs.zsh"
 export ZSH_CONFIG_DIRS="$HOME/.zsh"
 export ZDOTDIR="${HOME}/.zsh"
 ## When using login/interactive shell:
-# export TERM=xterm-termite
-# export TERMINFO=/usr/share/terminfo
+export TERMINFO="${HOME}/.config/terminfo.custom/current.termite.ti"
+
+export TERM=xterm-termite
 # SSH
 # source "${ZDOTDIR}/settings/ssh-env.zsh"
 # Browser
-# export BROWSER='/usr/bin/google-chrome-stable'
+export BROWSER='/usr/bin/google-chrome-stable'
 # Editor
 export EDITOR='vim'
 export VISUAL='vim'
@@ -45,7 +46,6 @@ fi
 # Programs
 typeset -U path
 path=(
-  ~/.cargo/bin                      # Rust
   "${PATH}"
   /bin
   /sbin
