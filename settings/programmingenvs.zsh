@@ -3,11 +3,6 @@
 # Purpose: Provide access to package manager attached to
 #       programming environments
 
-# --- Haskell [Language] ---
-# Completions
-#eval "$(stack --bash-completion-script stack)"
-[ -f "/Users/ashwig-personal/.ghcup/env" ] && source "/Users/ashwig-personal/.ghcup/env"
-
 # --- Perl [Language] ---
 # CPAN
 ## Environment Variables
@@ -30,9 +25,9 @@
 # -- Rust [Language] --
 # Sets default toolchain and location for the rustup installation.
 # See $ZDOTDIR/site-functions/_rustup for completion definitions.
-# export RUSTUP_HOME="$HOME/.rustup"
-# source "${HOME}/.cargo/env"
-# export PATH="$PATH:~/.cargo/env"
+export RUSTUP_HOME="$HOME/.rustup"
+source "${HOME}/.cargo/env"
+export PATH="$HOME/.cargo/bin:$PATH"
 #if [[ "$(rustup show | grep -e '2020-03-19')" >/dev/null ]]; then
 #  export RUSTUP_TOOLCHAIN='nightly-2020-03-19'
 #else
@@ -120,8 +115,8 @@ fpath+=${ZDOTDIR}/functions/conda_zsh_completion
 # compctl -K _pip_completion pip
 
 # # --- Android [Environment] ---
-# ANDROID_SDK_ROOT="/home/ahellwig/SDKs/Android/Sdk"
-# ANDROID_HOME="/home/ahellwig/SDKs/Android/Sdk"
+export ANDROID_SDK_ROOT="/home/ahellwig/Android/Sdk"
+export ANDROID_HOME="/home/ahellwig/Android/Sdk"
 
 # --- Ruby [Language] ---
 # RVM

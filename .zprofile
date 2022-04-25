@@ -7,19 +7,12 @@
 ####################################################
 
 # --- Variables ---
-# XDG Base Directories
-# source "${ZDOTDIR}/settings/xdg-user-dirs-settings.zsh"
-# Programming
-source "${ZDOTDIR}/settings/programmingenvs.zsh"
-# Audio Applications
-# source "${ZDOTDIR}/settings/audio/daw_env.zsh"
-# source "${ZDOTDIR}/settings/audio/ardour.zsh"
 # Shell
 export ZSH_CONFIG_DIRS="$HOME/.zsh"
 export ZDOTDIR="${HOME}/.zsh"
+
 ## When using login/interactive shell:
 export TERMINFO="${HOME}/.config/terminfo.custom/current.termite.ti"
-
 export TERM=xterm-termite
 # SSH
 # source "${ZDOTDIR}/settings/ssh-env.zsh"
@@ -62,8 +55,14 @@ path=(
   ~/.local/share/TEE-CLC/14.114.0   # Visual Studio Team Services
   ~/opt/cuda/bin                    # nVidia CUDA Tools
   ~/.yarn/bin                       # Node.js
-  ~/SDKs/Android/Sdk/platform-tools # Android Platform Tools
+  ~/Android/Sdk/platform-tools # Android Platform Tools
+  /home/ahellwig/Android/Sdk/cmdline-tools/latest/bin
   ~/.dotnet/tools                   # .NET Core Tools
   ~/SDKs/flutter/bin                # Flutter Framework SDK Tools
 )
 
+# Modifications
+# XDG Base Directories
+source "${ZDOTDIR}/settings/xdg-user-dirs-settings.zsh"
+# Programming
+source "${ZDOTDIR}/settings/programmingenvs.zsh"
