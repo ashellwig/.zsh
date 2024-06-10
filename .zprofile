@@ -18,6 +18,7 @@ export TERM=xterm-termite
 # source "${ZDOTDIR}/settings/ssh-env.zsh"
 # Browser
 export BROWSER='/usr/bin/google-chrome-stable'
+export CHROME_EXECUTABLE="${BROWSER}"
 # Editor
 export EDITOR='vim'
 export VISUAL='vim'
@@ -47,18 +48,16 @@ path=(
   /usr/bin/core_perl                # Perl
   /usr/bin/site_perl                # Perl
   /usr/bin/vendor_perl                # Perl
-  ~/anaconda3/bin                   # Python
+  # ~/anaconda3/bin                   # Python
   ~/.local/bin                      # Locally installed binaries
   ~/.local/bin/scripts              # Locally installed scripts
   ~/.local/bin/scripts/sh
-  ~/go/bin                          # Go
-  ~/.local/share/TEE-CLC/14.114.0   # Visual Studio Team Services
-  ~/opt/cuda/bin                    # nVidia CUDA Tools
-  ~/.yarn/bin                       # Node.js
-  ~/Android/Sdk/platform-tools # Android Platform Tools
-  /home/ahellwig/Android/Sdk/cmdline-tools/latest/bin
-  ~/.dotnet/tools                   # .NET Core Tools
-  ~/SDKs/flutter/bin                # Flutter Framework SDK Tools
+  # ~/go/bin                          # Go
+  # ~/.yarn/bin                       # Node.js
+  # ~/Android/Sdk/platform-tools # Android Platform Tools
+  # /home/ahellwig/Android/Sdk/cmdline-tools/latest/bin
+  # ~/.dotnet/tools                   # .NET Core Tools
+  # ~/SDKs/flutter/bin                # Flutter Framework SDK Tools
 )
 
 # Modifications

@@ -25,9 +25,9 @@
 # -- Rust [Language] --
 # Sets default toolchain and location for the rustup installation.
 # See $ZDOTDIR/site-functions/_rustup for completion definitions.
-export RUSTUP_HOME="$HOME/.rustup"
-source "${HOME}/.cargo/env"
-export PATH="$HOME/.cargo/bin:$PATH"
+# export RUSTUP_HOME="$HOME/.rustup"
+# source "${HOME}/.cargo/env"
+# export PATH="$HOME/.cargo/bin:$PATH"
 #if [[ "$(rustup show | grep -e '2020-03-19')" >/dev/null ]]; then
 #  export RUSTUP_TOOLCHAIN='nightly-2020-03-19'
 #else
@@ -60,7 +60,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # export LDFLAGS="${LDFLAGS}:-L/$HOME/SDKs/homebrew/opt/openssl@3/lib"
 # export CPPFLAGS="${CPPFLAGS}:-I/$HOME/SDKs/homebrew/opt/openssl@3/include"
 # GOPATH
-export GOPATH="$HOME/go"
+# export GOPATH="$HOME/go"
 
 # --- LaTeX [Language] ---
 # export TEXDIR='/usr/local/texlive/2018'
@@ -74,8 +74,8 @@ export GOPATH="$HOME/go"
 # --- Python [Language] ---
 # Conda
 ## Conda Initialize
-# __conda_setup="$(
-#   '/home/ahellwig/anaconda3/bin/conda' 'shell.zsh' 'hook' \
+#  __conda_setup="$(
+#     '/home/ahellwig/anaconda3/bin/conda' 'shell.zsh' 'hook' \
 #     2> /dev/null
 # )"
 
@@ -91,7 +91,7 @@ export GOPATH="$HOME/go"
 # unset __conda_setup
 ## Conda Completions
 ### Load Completions
-fpath+=${ZDOTDIR}/functions/conda_zsh_completion
+# fpath+=${ZDOTDIR}/functions/conda_zsh_completion
 ### Clean conda package cache
 # function conda-clear-zsh-cache() {
 #   if [[ -e "${ZDOTDIR}/.zcompcache" || -e "~/.zcompcache" ]]; then
@@ -115,8 +115,8 @@ fpath+=${ZDOTDIR}/functions/conda_zsh_completion
 # compctl -K _pip_completion pip
 
 # # --- Android [Environment] ---
-export ANDROID_SDK_ROOT="/home/ahellwig/Android/Sdk"
-export ANDROID_HOME="/home/ahellwig/Android/Sdk"
+# export ANDROID_SDK_ROOT="/home/ahellwig/Android/Sdk"
+# export ANDROID_HOME="/home/ahellwig/Android/Sdk"
 
 # --- Ruby [Language] ---
 # RVM
@@ -134,11 +134,12 @@ export ANDROID_HOME="/home/ahellwig/Android/Sdk"
 
 # --- Flutter [Framework] ---
 ## Check if already added to $PATH, if not, add it
-[[ ":$PATH:" != *":${HOME}/SDKs/flutter/bin:" ]] && PATH="${PATH}:${HOME}/SDKs/flutter/bin"
+# [[ ":$PATH:" != *":${HOME}/SDKs/flutter/bin:" ]] && PATH="${PATH}:${HOME}/SDKs/flutter/bin"
 
 # --- Windows Development ---
-#export DOTNET_CLI_TELEMETRY_OPTOUT=1
-#export MSBuildSDKsPath=$(echo /usr/share/dotnet/sdk/3.1.102/Sdks)
-#export DOTNET_ROOT='/usr/share/dotnet/sdk/3.1.102'
+# Config
+# export DOTNET_ROOT='/usr/share/dotnet/sdk/8.0.104'
+# export DOTNET_CLI_TELEMETRY_OPTOUT=1
+# export MSBuildSDKsPath=$(echo /usr/share/dotnet/sdk/8.0.104/Sdks)
 
 # vim: set et ts=2 sw=2 ft=zsh:

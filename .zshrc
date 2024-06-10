@@ -16,15 +16,6 @@ fpath=(
   ${ZDOTDIR}/site-functions/functions/
 )
 
-if [[ "$(uname -s)" == 'Darwin' ]]; then
-  if [[ "$(whoami)" == 'ashwig-personal' ]]; then
-    fpath=(
-      $fpath
-      '/opt/homebrew/share/zsh/site-functions'
-    )
-  fi
-fi
-
 for func in $^fpath/*(N-.x:t); do autoload $func; done
 
 # --- Functions ---
@@ -63,4 +54,3 @@ fi
 . ${ZDOTDIR}/functions/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # vim: set et ts=2 sw=2:
-export HOTDISHHONEY_FOOTER_PATH="/wp-content/themes/<YOURTHEME>/footer.php"
