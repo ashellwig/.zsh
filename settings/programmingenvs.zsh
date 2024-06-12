@@ -6,21 +6,11 @@
 # --- Perl [Language] ---
 # CPAN
 ## Environment Variables
-# PERL5LIB="/home/ahellwig/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"
-# export PERL5LIB
-# PERL_LOCAL_LIB_ROOT="/home/ahellwig/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"
-# export PERL_LOCAL_LIB_ROOT
-# PERL_MB_OPT="--install_base \"/home/ahellwig/perl5\""
-# export PERL_MB_OPT
-# PERL_MM_OPT="INSTALL_BASE=/home/ahellwig/perl5"
-# export PERL_MM_OPT
-# PATH="/$HOME/perl5/bin${PATH:+:${PATH}}"; export PATH;
-# PERL5LIB="/$HOME/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
-# PERL_LOCAL_LIB_ROOT="/$HOME/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
-# PERL_MB_OPT="--install_base \"/$HOME/perl5\""; export PERL_MB_OPT;
-# PERL_MM_OPT="INSTALL_BASE=/$HOME/perl5"; export PERL_MM_OPT;
-# ERL_MM_OPT="INSTALL_BASE=$HOME/perl5" cpan local::lib >/dev/null
-# echo 'eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"' >/dev/null
+PATH="/home/ahellwig/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/home/ahellwig/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/ahellwig/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/ahellwig/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/ahellwig/perl5"; export PERL_MM_OPT;
 
 # -- Rust [Language] --
 # Sets default toolchain and location for the rustup installation.

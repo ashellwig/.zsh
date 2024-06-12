@@ -37,10 +37,15 @@ if [[ -e '/etc/profile' ]]; then
 fi
 
 # --- Path ---
+# Modifications
+# XDG Base Directories
+source "${ZDOTDIR}/settings/xdg-user-dirs-settings.zsh"
+# Programming
+source "${ZDOTDIR}/settings/programmingenvs.zsh"
+
 # Programs
 typeset -U path
 path=(
-  "${PATH}"
   /bin
   /sbin
   /usr/{bin,sbin}
@@ -60,8 +65,3 @@ path=(
   # ~/SDKs/flutter/bin                # Flutter Framework SDK Tools
 )
 
-# Modifications
-# XDG Base Directories
-source "${ZDOTDIR}/settings/xdg-user-dirs-settings.zsh"
-# Programming
-source "${ZDOTDIR}/settings/programmingenvs.zsh"
