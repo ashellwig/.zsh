@@ -7,6 +7,8 @@
 # --- Path ---
 # $PATH
 source "${ZDOTDIR}/.zshenv"
+# source /etc/profile
+
 # $FPATH
 typeset -U fpath
 fpath=(
