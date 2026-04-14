@@ -7,9 +7,13 @@ if [[ -e ${ZDOTDIR}/functions/history-substring-search/zsh-history-substring-sea
   bindkey -M vicmd 'j' history-substring-search-down
 fi
 # Navigation
+bindkey -e
+
 bindkey '^[[H' beginning-of-line
 bindkey '^[[F' end-of-line
 bindkey '^[[3~' delete-char
 bindkey '^[[2~' overwrite-mode
+bindkey '\e\e[C' forward-word
+bindkey '\e\e[D' backward-word 
 
 # vim: set et ts=2 sw=2 ft=zsh:

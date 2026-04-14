@@ -17,7 +17,7 @@ export ZDOTDIR="${HOME}/.zsh"
 # SSH
 # source "${ZDOTDIR}/settings/ssh-env.zsh"
 # Browser
-export BROWSER='/usr/bin/google-chrome-stable'
+export BROWSER='/Applications/Google Chrome.app'
 export CHROME_EXECUTABLE="${BROWSER}"
 # Editor
 export EDITOR='vim'
@@ -42,6 +42,8 @@ export PAGER='less'
 source "${ZDOTDIR}/settings/xdg-user-dirs-settings.zsh"
 # Programming
 source "${ZDOTDIR}/settings/programmingenvs.zsh"
+# Homebrew
+eval "$(/opt/homebrew/bin/brew shellenv zsh)"
 
 # Programs
 typeset -U path
@@ -51,24 +53,12 @@ path=(
   /sbin
   /usr/{bin,sbin}
   /usr/local/{bin,sbin}
-  /usr/bin/core_perl                # Perl
-  /usr/bin/site_perl                # Perl
-  /usr/bin/vendor_perl              # Perl
-  ~/perl5/bin                       # Perl
+  /opt/homebrew/bin                 # MacOS Packages
   ~/.local/bin                      # Locally installed binaries
   ~/.local/bin/scripts              # Locally installed shell scripts
   ~/.local/bin/scripts/sh           # Locally installed shell scripts (sh)
   ~/.local/bin/scripts/zsh          # Locally installed shell scripts (zsh)
   ~/.local/bin/scripts/pwsh         # Locally installed shell scripts (pwsh)
-  /opt/cuda/bin                     # CUDA binaries (core)
-  /opt/cuda/nsight_compute          # CUDA binaries (nsight_compute)
-  /opt/nsight_systems/bin           # CUDA binaries (nsight_systems)
-  ~/.cargo/bin                      # Rust's `cargo` binary packages
-  ~/go/bin                          # Go
-  # ~/.yarn/bin                     # Node.js
-  # ~/Android/Sdk/platform-tools    # Android Platform Tools
-  ~/.dotnet/tools                   # .NET Core Tools
-  # ~/SDKs/flutter/bin              # Flutter Framework SDK Tools
   ~/.zsh/bin                        # zsh scripts
 )
 

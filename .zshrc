@@ -41,18 +41,19 @@ fi
 . ${ZDOTDIR}/settings/syntaxhighlightsettings.zsh
 # History
 . ${ZDOTDIR}/settings/historysettings.zsh
-# SSH
-. ${ZDOTDIR}/settings/ssh-env.zsh
 # Option Scripts
 if [[ -d ${ZDOTDIR}/options ]]; then
   for file in ${ZDOTDIR}/options/*.zsh; do
     . "$file"
   done
 fi
-
 # Keybindings
 . ${ZDOTDIR}/settings/keybindings.zsh
 # Autosuggestions
 . ${ZDOTDIR}/functions/zsh-autosuggestions/zsh-autosuggestions.zsh
+# GPG
+export GPG_TTY=$(tty)
+# iTerm2
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # vim: set et ts=2 sw=2:

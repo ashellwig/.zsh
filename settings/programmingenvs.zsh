@@ -12,44 +12,6 @@
 #PERL_MB_OPT="--install_base \"/home/ahellwig/perl5\""; export PERL_MB_OPT;
 #PERL_MM_OPT="INSTALL_BASE=/home/ahellwig/perl5"; export PERL_MM_OPT;
 
-# -- Rust [Language] --
-# Sets default toolchain and location for the rustup installation.
-# See $ZDOTDIR/site-functions/_rustup for completion definitions.
-export RUSTUP_HOME="$HOME/.rustup"
-source "${HOME}/.cargo/env"
-# export PATH="$HOME/.cargo/bin:$PATH"
-#if [[ "$(rustup show | grep -e '2020-03-19')" >/dev/null ]]; then
-#  export RUSTUP_TOOLCHAIN='nightly-2020-03-19'
-#else
-#  export RUSTUP_TOOLCHAIN=''
-#fi
-#export RUST_SRC_PATH='/home/ahellwig/.rustup/toolchains/nightly-2020-03-19-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src'
-#export RUSTUP_DIST_SERVER='https://static.rust-lang.org'
-#export RUSTUP_DIST_ROOT='https://static.rust-lang.org/dist'
-#export RUSTUP_UPDATE_ROOT='https://static.rust-lang.org/rustup'
-
-# --- WebAssembly [Library] ---
-# EMSDK
-# Source the EMSDK Environment
-# alias emsenv="source ${HOME}/SDKs/emsdk/emsdk_env.sh --release"
-
-# --- C/C++ [Language] ---
-# Compiler Option
-#export CC=clang
-#export CXX=clang++
-# Linking
-## CUDA
-# export PATH="$PATH:/opt/cuda/bin:/opt/cuda/nsight_compute:/opt/cuda/nsight_systems/bin"
-export NVCC_CCBIN="/usr/bin/g++-13"
-## Bioinformatics
-#export NCBI_VDB_LIBDIR=/usr/local/ncbi/ncbi-vdb/lib64
-#export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${NCBI_VDB_LIBDIR}"
-
-# --- Go [Language] ---
-# GOPATH
-export GOPATH="$HOME/go"
-export GOBIN="$GOPATH/bin"
-
 # --- LaTeX [Language] ---
 # export TEXDIR='/usr/local/texlive/2018'
 # export TEXMFLOCAL='/usr/local/share/texmf:/usr/share/texmf'
@@ -61,22 +23,20 @@ export GOBIN="$GOPATH/bin"
 
 # --- Python [Language] ---
 # Conda
-## Conda Initialize
-__conda_setup="$(
-    '/home/ahellwig/anaconda3/bin/conda' 'shell.zsh' 'hook' \
-    2> /dev/null
-)"
-
+## >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/ashton.hellwig/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
-  eval "$__conda_setup"
+    eval "$__conda_setup"
 else
-  if [ -f "/home/ahellwig/anaconda3/etc/profile.d/conda.sh" ]; then
-    . "/home/ahellwig/anaconda3/etc/profile.d/conda.sh"
-  else
-    export PATH="/home/ahellwig/anaconda3/bin:$PATH"
-  fi
+    if [ -f "/Users/ashton.hellwig/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/ashton.hellwig/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/ashton.hellwig/miniconda3/bin:$PATH"
+    fi
 fi
 unset __conda_setup
+# <<< conda initialize <<<
 ## Conda Completions
 ### Load Completions
 fpath+=${ZDOTDIR}/functions/conda_zsh_completion
@@ -122,8 +82,8 @@ compctl -K _pip_completion pip
 # --- Windows Development ---
 # Config
 # export DOTNET_ROOT='/usr/share/dotnet/sdk/9.0.105'
-export DOTNET_ROOT='/usr/share/dotnet'
-export DOTNET_CLI_TELEMETRY_OPTOUT=1
-export MSBuildSDKsPath="$(echo /usr/share/dotnet/sdk/9.0.105/Sdks)"
+# export DOTNET_ROOT='/usr/share/dotnet'
+# export DOTNET_CLI_TELEMETRY_OPTOUT=1
+# export MSBuildSDKsPath="$(echo /usr/share/dotnet/sdk/9.0.105/Sdks)"
 
 # vim: set et ts=2 sw=2 ft=zsh:
